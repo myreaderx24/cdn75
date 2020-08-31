@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ja" xmlns:og="http://ogp.me/ns#" id="pjaxArea">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PXZZWR4');</script>
+  <!-- End Google Tag Manager -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" />
+<link rel="stylesheet" type="text/css" href="https://ainow.ai/wp-content/themes/ainow/css/main.css?0" />
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8728b38726.js" crossorigin="anonymous"></script>
+<script src="https://sdk.form.run/js/v2/formrun.js"></script>
+<title>データサイエンスから機械学習エンジニアリングへの移行 | AI専門ニュースメディア AINOW</title>
+
+<!-- All in One SEO Pack 3.1.1 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<meta name="description"  content="AINOW翻訳記事『データサイエンスから機械学習エンジニアリングへの移行』では、実践的な機械学習システム開発思想が「機械学習エンジニアリング」と命名されたうえで解説されています。この概念は「機械学習を現実世界の問題に応用する技術」であり、今後の日本AI業界ではこの概念に詳しいソフトウェアエンジニアが求められるでしょう。" />
+
+<meta name="keywords"  content="翻訳記事,機械学習,データサイエンス,ai開発手法,ai開発設計,caleb kaiser,吉本幸記" />
+
+<link rel="canonical" href="https://ainow.ai/2020/08/28/226567/" />
+<meta property="og:title" content="データサイエンスから機械学習エンジニアリングへの移行 | AI専門ニュースメディア AINOW" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ainow.ai/2020/08/28/226567/" />
+<meta property="og:image" content="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3.png" />
+<meta property="og:site_name" content="AINOW" />
+<meta property="fb:admins" content="491682187693593" />
+<meta property="og:description" content="AINOW翻訳記事『データサイエンスから機械学習エンジニアリングへの移行』では、実践的な機械学習システム開発思想が「機械学習エンジニアリング」と命名されたうえで解説されています。この概念は「機械学習を現実世界の問題に応用する技術」であり、今後の日本AI業界ではこの概念に詳しいソフトウェアエンジニアが求められるでしょう。" />
+<meta property="article:tag" content="翻訳記事" />
+<meta property="article:tag" content="機械学習" />
+<meta property="article:tag" content="データサイエンス" />
+<meta property="article:tag" content="ai開発手法" />
+<meta property="article:tag" content="ai開発設計" />
+<meta property="article:tag" content="caleb kaiser" />
+<meta property="article:tag" content="吉本幸記" />
+<meta property="article:tag" content="ainow編集部" />
+<meta property="article:publisher" content="https://www.facebook.com/dipainow/" />
+<meta property="article:published_time" content="2020-08-27T22:00:57Z" />
+<meta property="article:modified_time" content="2020-08-26T12:02:35Z" />
+<meta property="og:image:secure_url" content="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="データサイエンスから機械学習エンジニアリングへの移行 | AI専門ニュースメディア AINOW" />
+<meta name="twitter:description" content="AINOW翻訳記事『データサイエンスから機械学習エンジニアリングへの移行』では、実践的な機械学習システム開発思想が「機械学習エンジニアリング」と命名されたうえで解説されています。この概念は「機械学習を現実世界の問題に応用する技術」であり、今後の日本AI業界ではこの概念に詳しいソフトウェアエンジニアが求められるでしょう。" />
+<meta name="twitter:image" content="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3.png" />
+<!-- All in One SEO Pack -->
+<link rel='dns-prefetch' href='//ainow.ai' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ainow.ai\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='celtispack-style-css'  href='https://ainow.ai/wp-content/plugins/celtispack/css/celtispack-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='avatar-manager-css'  href='https://ainow.ai/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://ainow.ai/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pz-linkcard-css'  href='//ainow.ai/wp-content/uploads/pz-linkcard/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='stock-ticker-css'  href='https://ainow.ai/wp-content/plugins/stock-ticker/assets/css/stock-ticker.css' type='text/css' media='all' />
+<link rel='stylesheet' id='stock-ticker-custom-css'  href='https://ainow.ai/wp-content/uploads/stock-ticker-custom.css' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='https://ainow.ai/wp-content/plugins/table-of-contents-plus/screen.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='awsm-jobs-general-css'  href='https://ainow.ai/wp-content/plugins/wp-job-openings/assets/css/general.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='awsm-jobs-style-css'  href='https://ainow.ai/wp-content/plugins/wp-job-openings/assets/css/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='amazon-auto-links-./wp-content/plugins/amazon-auto-links/template/list-css'  href='https://ainow.ai/wp-content/plugins/amazon-auto-links/template/list/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-name-css'  href='https://ainow.ai/wp-content/themes/ainow/css/main.css' type='text/css' media='all' />
+<link rel='stylesheet' id='amazonjs-css'  href='https://ainow.ai/wp-content/plugins/amazonjs/css/amazonjs.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tooltip-css'  href='https://ainow.ai/wp-content/plugins/enhanced-tooltipglossary/frontend/assets/css/tooltip.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://ainow.ai/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://ainow.ai/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/wp-google-analytics-events/js/ga-scroll-events.js'></script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/avatar-manager/assets/js/avatar-manager.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cmtt_data = {"tooltip":{"clickable":0,"top":3,"left":23,"endalpha":95,"borderStyle":"none","borderWidth":"0px","borderColor":"#000","fontSize":"13px","padding":"2px 12px 3px 7px","borderRadius":"6px"},"ajaxurl":"https:\/\/ainow.ai\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/enhanced-tooltipglossary/frontend/assets/js/tooltip.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpp_params = {"sampling_active":"1","sampling_rate":"100","ajax_url":"https:\/\/ainow.ai\/wp-json\/wordpress-popular-posts\/v1\/popular-posts\/","ID":"226567","token":"bdcf8df10d","debug":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/wordpress-popular-posts/public/js/wpp-4.2.0.min.js'></script>
+<link rel='https://api.w.org/' href='https://ainow.ai/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ainow.ai/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://ainow.ai/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='ほぼすべての機械学習プロジェクトのためのタスクチートシート' href='https://ainow.ai/2020/08/27/226774/' />
+<link rel='next' title='耳の遠い人との会話が快適になるAIボイス筆談機「ポケトーク mimi」が取扱い開始-音声をリアルタイムで文字に変換' href='https://ainow.ai/2020/08/28/227636/' />
+<meta name="generator" content="WordPress 4.7.17" />
+<link rel='shortlink' href='https://ainow.ai/?p=226567' />
+<link rel="alternate" type="application/json+oembed" href="https://ainow.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fainow.ai%2F2020%2F08%2F28%2F226567%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://ainow.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fainow.ai%2F2020%2F08%2F28%2F226567%2F&#038;format=xml" />
+<meta name="robots" content="index,follow" /><style type="text/css">
+.post-last-modified, .page-last-modified {
+color: #808080;
+font-weight: bold; 
+font-size: small; 
+}
+</style>
+<style type='text/css' id='amazon-auto-links-button-css'>.amazon-auto-links-button.amazon-auto-links-button-default {background: #4997e5;background-image: -webkit-linear-gradient(top, #4997e5, #3f89ba);background-image: -moz-linear-gradient(top, #4997e5, #3f89ba);background-image: -ms-linear-gradient(top, #4997e5, #3f89ba);background-image: -o-linear-gradient(top, #4997e5, #3f89ba);background-image: linear-gradient(to bottom, #4997e5, #3f89ba);-webkit-border-radius: 4;-moz-border-radius: 4;border-radius: 4px;margin-left: auto;margin-right: auto;text-align: center;white-space: nowrap;color: #ffffff;font-size: 13px;text-shadow-color: transparent;width: 100px;box-shadow-color: #666666;padding: 7px 8px 8px 8px;background: #3498db;border: solid #6891a5 1px;text-decoration: none;}.amazon-auto-links-button.amazon-auto-links-button-default:hover {background: #3cb0fd;background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);background-image: -o-linear-gradient(top, #3cb0fd, #3498db);background-image: linear-gradient(to bottom, #3cb0fd, #3498db);text-decoration: none;}.amazon-auto-links-button.amazon-auto-links-button-default > a {color: inherit; border-bottom: none;text-decoration: none;}.amazon-auto-links-button.amazon-auto-links-button-default > a:hover {color: inherit;}.amazon-auto-links-button.amazon-auto-links-button-192994 {background: #4997e5;background-image: -webkit-linear-gradient(top, #4997e5, #3f89ba);background-image: -moz-linear-gradient(top, #4997e5, #3f89ba);background-image: -ms-linear-gradient(top, #4997e5, #3f89ba);background-image: -o-linear-gradient(top, #4997e5, #3f89ba);background-image: linear-gradient(to bottom, #4997e5, #3f89ba);-webkit-border-radius: 4;-moz-border-radius: 4;border-radius: 4px;margin-left: auto;margin-right: auto;text-align: center;white-space: nowrap;color: #ffffff;font-size: 13px;text-shadow-color: transparent;width: 100px;box-shadow-color: #666666;padding: 7px 8px 8px 8px;background: #3498db;border: solid #6891a5 1px;text-decoration: none;}.amazon-auto-links-button.amazon-auto-links-button-192994:hover {background: #3cb0fd;background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);background-image: -o-linear-gradient(top, #3cb0fd, #3498db);background-image: linear-gradient(to bottom, #3cb0fd, #3498db);text-decoration: none;}.amazon-auto-links-button.amazon-auto-links-button-192994 > a {color: inherit; border-bottom: none;text-decoration: none;}.amazon-auto-links-button.amazon-auto-links-button-192994 > a:hover {color: inherit;}</style><style type="text/css" id="syntaxhighlighteranchor"></style>
+<link rel="icon" href="https://ainow.ai/wp-content/uploads/2020/05/cropped-ainow_vertical_1-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://ainow.ai/wp-content/uploads/2020/05/cropped-ainow_vertical_1-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://ainow.ai/wp-content/uploads/2020/05/cropped-ainow_vertical_1-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://ainow.ai/wp-content/uploads/2020/05/cropped-ainow_vertical_1-1-270x270.png" />
+
+<!-- BEGIN ExactMetrics v5.3.8 Universal Analytics - https://exactmetrics.com/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-79023068-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END ExactMetrics Universal Analytics -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXZZWR4"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+<!-- wrapper -->
+<div id="wrapper">
+<!-- header -->
+
+<header>
+<input type="checkbox" id="cp_toggle">
+<div class="cp_mobilebar">
+    <div class="sp_header_logo">
+      <a href="/"><img src="https://ainow.ai/wp-content/themes/ainow/img/sp_logo.png" alt=""></a>
+    </div>
+  <a class="sp_tag_button sp" href="/tag/">#タグから探す</a>
+  <label for="cp_toggle" class="cp_menuicon">
+    <span></span>
+  </label>
+</div>
+<div class="cp_offcm_back sp">
+</div>
+<div class="cp_offcm">
+    <div class="header_logo pc">
+      <a href="/"><img src="https://ainow.ai/wp-content/themes/ainow/img/logo.png" alt=""></a>
+    </div>
+  <nav>
+      <a class="tag_button pc" href="/tag/">#タグから探す</a>
+      <div class="search_area">
+      <form method="get" class="searchform" action="https://ainow.ai/">
+  <input type="text" placeholder="記事を検索" name="s" class="searchfield" value="" />
+</form>
+      </div>
+      <ul id="menu-%e3%83%a1%e3%82%a4%e3%83%b3%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu"><li id="menu-item-113468" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-113468"><a href="https://ainow.ai/">TOP</a></li>
+<li id="menu-item-114747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-114747"><a href="https://ainow.ai/what-ainow/">AINOWとは</a></li>
+<li id="menu-item-168662" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-168662"><a href="https://ainow.ai/category/ainoweditor/">編集部記事</a>
+<ul class="sub-menu">
+	<li id="menu-item-169633" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-169633"><a href="https://ainow.ai/category/ainoweditor/ai-news/">注目のニュース</a></li>
+	<li id="menu-item-169496" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-169496"><a href="https://ainow.ai/category/ainoweditor/event/">イベント</a></li>
+	<li id="menu-item-113466" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-113466"><a href="https://ainow.ai/category/ainoweditor/interview/">インタビュー</a></li>
+	<li id="menu-item-134024" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134024"><a href="https://ainow.ai/category/ainoweditor/column/">コラム</a></li>
+	<li id="menu-item-137044" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137044"><a href="https://ainow.ai/category/foreign-trend">海外トレンド</a></li>
+</ul>
+</li>
+<li id="menu-item-134028" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-134028"><a href="https://ainow.ai/accelerator/">AI.Accelerator</a>
+<ul class="sub-menu">
+	<li id="menu-item-134025" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134025"><a href="https://ainow.ai/category/ainoweditor/ai-accelerator/">AI.Accelerator記事</a></li>
+</ul>
+</li>
+<li id="menu-item-154333" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154333"><a href="https://form.run/@ainow-contact">お問い合わせ</a></li>
+</ul>  </nav>
+</div>
+</header>
+  <!-- contents -->
+  <div class="contents">
+    <div class="article_wrapper">
+      <div class="article_contents">
+        <div class="article_area">
+            <div class="article_manager">
+    <span><a href="/">HOME</a>/
+      <a href="https://ainow.ai/category/ainoweditor/">AINOW編集部</a>      /データサイエンスから機械学習エンジニアリングへの移行</span>
+  </div>
+          <div id="addbanner-titletop">
+      <div id="text-17" class="widget widget_text">			<div class="textwidget"><a href="https://form.run/@ainowmagazine3" target="_blank"><img src="https://ainow.ai/wp-content/uploads/2017/05/20170529_738_01.png"></a></div>
+		</div>    </div>
+      <div class="article_area_data">
+      <span class="article_area_date">2020.08.28</span>
+</div>
+  <h1 class="article_main_title">データサイエンスから機械学習エンジニアリングへの移行</h1>
+  <div class="button-area">
+  <ul>
+    <!--Twitter-->
+    <li class="twitter">
+      <a href="https://twitter.com/intent/tweet?text=%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%8B%E3%82%89%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C&amp;url=https%3A%2F%2Fainow.ai%2F2020%2F08%2F28%2F226567%2F"
+      target="_blank" title="Twitterで共有">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <!--FaceBook-->
+    <li class="facebook">
+      <a href="https://www.facebook.com/sharer.php?src=bm&u=https%3A%2F%2Fainow.ai%2F2020%2F08%2F28%2F226567%2F&t=%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%8B%E3%82%89%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C"
+      target="_blank" title="Facebookで共有">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <!--はてなブックマーク-->
+    <li class="hatena">
+      <a href="https://b.hatena.ne.jp/add?mode=confirm&amp;url=https%3A%2F%2Fainow.ai%2F2020%2F08%2F28%2F226567%2F&amp;title=%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%8B%E3%82%89%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C"
+      target="_blank" title="はてなブックマークに追加">
+        <i class="fa fa-hatena"></i>
+      </a>
+    </li>
+    <!--Poket-->
+    <li class="rss">
+      <a href="https://feedly.com/i/subscription/feed%2Fhttp%3A%2F%2Fainow.ai%2Ffeed%2F"
+      target="_blank" title="RSS購読">
+        <i class="fas fa-rss"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+  <div class="entry-content">
+    <div class="supplement ">&#33879;&#32773;&#12398;Caleb Kaiser&#27663;&#12399;&#27231;&#26800;&#23398;&#32722;&#12514;&#12487;&#12523;&#38283;&#30330;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;<a href="https://github.com/cortexlabs/cortex" target="_blank" rel="noopener noreferrer">Cortex</a>&#12398;&#38283;&#30330;&#12395;&#38306;&#12431;&#12426;&#12394;&#12364;&#12425;&#12289;&#27231;&#26800;&#23398;&#32722;&#12395;&#38306;&#12377;&#12427;&#25216;&#34899;&#35542;&#12434;Medium&#12395;&#25237;&#31295;&#12375;&#32154;&#12369;&#12390;&#12356;&#12414;&#12377;&#12290;AINOW&#12391;&#32057;&#20171;&#12375;&#12383;&#35352;&#20107;&#12302;<a href="https://ainow.ai/2020/06/22/222337/" target="_blank" rel="noopener noreferrer">&#27231;&#26800;&#23398;&#32722;&#33258;&#20307;&#12434;&#23398;&#12406;&#12394;</a>&#12303;&#12391;&#27231;&#26800;&#23398;&#32722;&#12514;&#12487;&#12523;&#12398;&#38283;&#30330;&#23455;&#36341;&#21147;&#12398;&#37325;&#35201;&#24615;&#12434;&#21147;&#35500;&#12375;&#12383;&#21516;&#27663;&#12399;&#12289;&#26368;&#36817;Medium&#12395;&#25237;&#31295;&#12375;&#12383;&#35352;&#20107;&#12302;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12363;&#12425;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12408;&#12398;&#31227;&#34892;&#12303;&#12395;&#12362;&#12356;&#12390;&#12289;&#12381;&#12358;&#12375;&#12383;&#38283;&#30330;&#23455;&#36341;&#21147;&#12395;&#12300;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12301;&#12392;&#12356;&#12358;&#21517;&#31216;&#12434;&#12388;&#12369;&#12390;&#35443;&#12375;&#12367;&#35299;&#35500;&#12375;&#12390;&#12356;&#12414;&#12377;&#12290;
+<p>&#12486;&#12461;&#12473;&#12488;&#12450;&#12489;&#12505;&#12531;&#12481;&#12515;&#12540;&#12466;&#12540;&#12512;&#12302;AI Dungeon&#12303;&#12398;&#12424;&#12358;&#12394;&#27231;&#26800;&#23398;&#32722;&#12471;&#12473;&#12486;&#12512;&#12395;&#12399;&#12289;&#21516;&#12466;&#12540;&#12512;&#12395;&#27963;&#29992;&#12373;&#12428;&#12390;&#12356;&#12427;&#35328;&#35486;&#12514;&#12487;&#12523;GPT-2&#12434;&#38283;&#30330;&#12377;&#12427;&#25216;&#34899;&#12392;&#12289;&#12371;&#12398;&#35328;&#35486;&#12514;&#12487;&#12523;&#12434;&#20351;&#12387;&#12390;&#12466;&#12540;&#12512;&#12434;&#38283;&#30330;&#12377;&#12427;&#12381;&#12428;&#12392;&#12356;&#12358;&#20301;&#30456;&#12398;&#30064;&#12394;&#12427;&#12405;&#12383;&#12388;&#12398;&#25216;&#34899;&#12364;&#38306;&#12431;&#12387;&#12390;&#12356;&#12414;&#12377;&#12290;&#21516;&#27663;&#12399;&#12289;&#21069;&#32773;&#12398;&#12424;&#12358;&#12394;&#27231;&#26800;&#23398;&#32722;&#12471;&#12473;&#12486;&#12512;&#12398;&#20013;&#26680;&#27231;&#33021;&#12434;&#21496;&#12427;&#25216;&#34899;&#12434;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12289;&#12381;&#12375;&#12390;&#24460;&#32773;&#12434;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12392;&#21306;&#21029;&#12375;&#12414;&#12377;&#12290;&#12371;&#12398;&#12424;&#12358;&#12395;&#21306;&#21029;&#12377;&#12427;&#12392;&#12289;&#24460;&#32773;&#12399;&#12300;<strong>&#27231;&#26800;&#23398;&#32722;&#12434;&#29694;&#23455;&#19990;&#30028;&#12398;&#21839;&#38988;&#12395;&#24540;&#29992;&#12377;&#12427;&#25216;&#34899;</strong>&#12301;&#12392;&#23450;&#32681;&#12391;&#12365;&#12414;&#12377;&#12290;<br>
+&#21516;&#27663;&#12395;&#12424;&#12427;&#12392;&#12289;&#24467;&#26469;&#12398;AI&#12484;&#12540;&#12523;&#12420;AI&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12399;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12434;&#24847;&#35672;&#12375;&#12383;&#12418;&#12398;&#12392;&#12394;&#12387;&#12390;&#12356;&#12414;&#12377;&#12290;&#12375;&#12363;&#12375;&#12394;&#12364;&#12425;&#12289;&#23455;&#38555;&#12395;&#27231;&#26800;&#23398;&#32722;&#12471;&#12473;&#12486;&#12512;&#12398;&#27083;&#31689;&#12395;&#24441;&#31435;&#12388;&#12398;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12434;&#24847;&#35672;&#12375;&#12383;&#12418;&#12398;&#12391;&#12377;&#12290;&#12371;&#12358;&#12375;&#12383;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12399;&#12289;&#12469;&#12540;&#12496;&#12398;&#36000;&#33655;&#20998;&#25955;&#12420;API&#12398;&#21628;&#12403;&#20986;&#12375;&#12398;&#12424;&#12358;&#12394;<strong>&#26082;&#23384;&#12398;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12395;&#20284;&#12383;&#25216;&#34899;</strong>&#12392;&#35211;&#12394;&#12377;&#12371;&#12392;&#12364;&#12391;&#12365;&#12414;&#12377;&#12290;<br>
+&#21516;&#27663;&#12364;&#38283;&#30330;&#12395;&#38306;&#12431;&#12427;Cortex&#12399;&#12289;&#20197;&#19978;&#12398;&#12424;&#12358;&#12394;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12434;&#24847;&#35672;&#12375;&#12383;&#38283;&#30330;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12392;&#12394;&#12387;&#12390;&#12356;&#12414;&#12377;&#12290;&#12381;&#12375;&#12390;&#12289;&#20170;&#24460;&#12398;&#27231;&#26800;&#23398;&#32722;&#12471;&#12473;&#12486;&#12512;&#12398;&#26222;&#21450;&#12395;&#12362;&#12356;&#12390;&#37325;&#35201;&#12394;&#12398;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12392;&#12381;&#12428;&#12434;&#24847;&#35672;&#12375;&#12383;&#12484;&#12540;&#12523;&#32676;&#12394;&#12398;&#12391;&#12377;&#12290;</p>
+<p>&#26085;&#26412;&#12398;AI&#26989;&#30028;&#12395;&#27714;&#12417;&#12425;&#12428;&#12427;&#20154;&#26448;&#20687;&#12434;&#32771;&#12360;&#12383;&#22580;&#21512;&#12289;&#27231;&#26800;&#23398;&#32722;&#33258;&#20307;&#12398;&#30740;&#31350;&#38283;&#30330;&#12395;&#38306;&#12431;&#12427;&#12300;<strong>&#27231;&#26800;&#23398;&#32722;&#12398;&#12522;&#12469;&#12540;&#12481;&#12456;&#12531;&#12472;&#12491;&#12450;</strong>&#12301;&#12392;&#23455;&#35013;&#12434;&#23554;&#38272;&#12392;&#12377;&#12427;&#12300;<strong>&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12395;&#35443;&#12375;&#12356;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;</strong>&#12301;&#12398;2&#31278;&#39006;&#12398;&#20154;&#26448;&#12364;&#25369;&#12370;&#12425;&#12428;&#12414;&#12377;&#12290;&#24460;&#32773;&#12398;&#20154;&#26448;&#12395;&#38306;&#12375;&#12390;&#12399;&#12289;&#12371;&#12428;&#12363;&#12425;&#12461;&#12515;&#12522;&#12450;&#12497;&#12473;&#12364;&#25972;&#20633;&#12373;&#12428;&#12390;&#12356;&#12367;&#12371;&#12392;&#12391;&#12375;&#12423;&#12358;&#12290;</p>
+<p><span style="font-size: 10pt;"><strong>&#12394;&#12362;&#12289;&#20197;&#19979;&#12398;&#35352;&#20107;&#26412;&#25991;&#12399;Caleb Kaiser&#27663;&#12395;&#30452;&#25509;&#12467;&#12531;&#12479;&#12463;&#12488;&#12434;&#12392;&#12426;&#12289;&#32763;&#35379;&#35377;&#21487;&#12434;&#38914;&#12356;&#12383;&#12358;&#12360;&#12391;&#32763;&#35379;&#12375;&#12383;&#12418;&#12398;&#12391;&#12377;&#12290;&#12414;&#12383;&#12289;&#32763;&#35379;&#35352;&#20107;&#12398;&#20869;&#23481;&#12399;&#21516;&#27663;&#12398;&#35211;&#35299;&#12391;&#12354;&#12426;&#12289;&#29305;&#23450;&#12398;&#22269;&#12420;&#22320;&#22495;&#12394;&#12425;&#12403;&#32068;&#32340;&#12420;&#22243;&#20307;&#12434;&#20195;&#34920;&#12377;&#12427;&#12418;&#12398;&#12391;&#12399;&#12394;&#12367;&#12289;&#32763;&#35379;&#32773;&#12362;&#12424;&#12403;AINOW&#32232;&#38598;&#37096;&#12398;&#20027;&#32681;&#20027;&#24373;&#12434;&#34920;&#26126;&#12375;&#12383;&#12418;&#12398;&#12391;&#12418;&#12354;&#12426;&#12414;&#12379;&#12435;&#12290;</strong></span><br></p></div>
+<div id="toc_container" class="toc_light_blue no_bullets"><p class="toc_title">&#30446;&#27425;</p><ul class="toc_list"><li><a href="#i">&#27231;&#26800;&#23398;&#32722;&#12392;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12398;&#19990;&#30028;&#12399;&#22793;&#12431;&#12426;&#12388;&#12388;&#12354;&#12427;</a></li><li><a href="#i-2">&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12392;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12434;&#29694;&#23455;&#19990;&#30028;&#12398;&#21839;&#38988;&#12395;&#24540;&#29992;&#12377;&#12427;&#26041;&#27861;&#12391;&#12354;&#12427;</a><ul><li><a href="#1">1&#65294;&#30011;&#20687;&#20998;&#39006;&#12363;&#12425;&#27231;&#26800;&#23398;&#32722;&#29983;&#25104;&#12459;&#12479;&#12525;&#12464;&#12408;</a></li><li><a href="#2">2&#65294;&#12458;&#12502;&#12472;&#12455;&#12463;&#12488;&#26908;&#30693;&#12363;&#12425;&#23494;&#29471;&#20104;&#38450;&#12408;</a></li><li><a href="#3COVID19">3&#65294;&#27231;&#26800;&#32763;&#35379;&#12363;&#12425;COVID19&#12398;&#12512;&#12540;&#12531;&#12471;&#12519;&#12483;&#12488;&#12408;</a></li><li><a href="#4">4&#65294;&#12486;&#12461;&#12473;&#12488;&#29983;&#25104;&#12363;&#12425;&#27231;&#26800;&#23398;&#32722;&#12398;&#12480;&#12531;&#12472;&#12519;&#12531;&#12510;&#12473;&#12479;&#12540;&#12408;</a></li></ul></li><li><a href="#i-3">&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12395;&#12399;&#20309;&#12364;&#12354;&#12427;&#12398;&#12363;</a></li><li><a href="#i-4">&#31169;&#12383;&#12385;&#12399;&#12289;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12391;&#12399;&#12394;&#12367;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#12383;&#12417;&#12398;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12434;&#27083;&#31689;&#12375;&#12390;&#12356;&#12427;</a></li></ul></div>
+<h2><span id="i">&#27231;&#26800;&#23398;&#32722;&#12392;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12398;&#19990;&#30028;&#12399;&#22793;&#12431;&#12426;&#12388;&#12388;&#12354;&#12427;</span></h2>
+<p>&#36942;&#21435;20&#24180;&#38291;&#12289; &#27231;&#26800;&#23398;&#32722;&#12399;1&#12388;&#12398;&#30097;&#21839;&#12434;&#21839;&#12356;&#32154;&#12369;&#12390;&#12365;&#12383;&#12290;<em>&#20309;&#20107;&#12363;&#12434;</em>&#23455;&#34892;&#12377;&#12427;&#12514;&#12487;&#12523;&#12434;&#35347;&#32244;&#12377;&#12427;&#12371;&#12392;&#12399;&#12391;&#12365;&#12427;&#12398;&#12363;&#12290;</p>
+<p>&#12300;<em>&#20309;&#20107;&#12363;</em>&#12301;&#12392;&#35328;&#12358;&#12363;&#12425;&#12395;&#12399;&#12289;&#12418;&#12385;&#12429;&#12435;&#12393;&#12435;&#12394;&#12479;&#12473;&#12463;&#12391;&#12354;&#12387;&#12390;&#12418;&#12424;&#12356;&#12290;&#25991;&#31456;&#12398;&#27425;&#12398;&#21336;&#35486;&#12434;&#20104;&#28204;&#12377;&#12427;&#12289;&#20889;&#30495;&#12398;&#20013;&#12398;&#38996;&#12434;&#35469;&#35672;&#12377;&#12427;&#12289;&#29305;&#23450;&#12398;&#38899;&#12434;&#30330;&#29983;&#12373;&#12379;&#12427;&#12290;&#27231;&#26800;&#23398;&#32722;&#12364;&#27231;&#33021;&#12377;&#12427;&#12363;&#12393;&#12358;&#12363;&#12289;&#12354;&#12427;&#12356;&#12399;&#27491;&#30906;&#12394;&#20104;&#28204;&#12364;&#12391;&#12365;&#12427;&#12363;&#12393;&#12358;&#12363;&#12289;&#12392;&#12356;&#12358;&#12371;&#12392;&#12364;&#30446;&#27161;&#12384;&#12387;&#12383;&#12398;&#12384;&#12290;</p>
+<p>&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12486;&#12451;&#12473;&#12488;&#12395;&#12424;&#12427;&#20309;&#21313;&#24180;&#12395;&#12418;&#12431;&#12383;&#12427;&#30740;&#31350;&#12398;&#12362;&#12363;&#12370;&#12391;&#12289;&#20170;&#12391;&#12399;&#22810;&#12367;&#12398;&#12300;<em>&#20309;&#20107;&#12363;</em>&#12301;&#12434;&#23455;&#34892;&#12391;&#12365;&#12427;&#12514;&#12487;&#12523;&#12364;&#12289;&#20197;&#19979;&#12398;&#12424;&#12358;&#12395;&#12383;&#12367;&#12373;&#12435;&#12354;&#12427;&#12290;</p>
+<ul><li>OpenAI&#12398;GPT-2&#65288;&#29694;&#22312;&#12399;GPT-3&#65289;&#12399;&#12289;&#12394;&#12363;&#12394;&#12363;&#12395;&#20154;&#38291;&#12425;&#12375;&#12356;&#12486;&#12461;&#12473;&#12488;&#12434;&#29983;&#25104;&#12377;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12427;&#12290;</li>
+<li>&#65288;&#20844;&#24335;&#29256;&#12434;&#12417;&#12368;&#12427;&#35696;&#35542;&#12399;&#12373;&#12390;&#12362;&#12365;&#65288;&#8251;&#35379;&#35387;1&#65289;&#65289;YOLOv5&#12398;&#12424;&#12358;&#12394;&#12458;&#12502;&#12472;&#12455;&#12463;&#12488;&#26908;&#20986;&#12514;&#12487;&#12523;&#12399;&#12289;&#27598;&#31186;140&#12501;&#12524;&#12540;&#12512;&#12398;&#21205;&#30011;&#12363;&#12425;&#12458;&#12502;&#12472;&#12455;&#12463;&#12488;&#12434;&#35299;&#26512;&#12377;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12427;&#12290;</li>
+<li>Tacotron 2&#12398;&#12424;&#12358;&#12394;&#12486;&#12461;&#12473;&#12488;&#38899;&#22768;&#21512;&#25104;&#12514;&#12487;&#12523;&#12399;&#12289;&#20154;&#38291;&#12398;&#22768;&#12398;&#12424;&#12358;&#12395;&#32862;&#12371;&#12360;&#12427;&#38899;&#22768;&#12434;&#29983;&#25104;&#12377;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12427;&#12290;</li>
+</ul><p>&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12486;&#12451;&#12473;&#12488;&#12420;&#27231;&#26800;&#23398;&#32722;&#12398;&#30740;&#31350;&#32773;&#12383;&#12385;&#12398;&#20181;&#20107;&#12399;&#39514;&#12367;&#12409;&#12365;&#12418;&#12398;&#12391;&#12289;&#12381;&#12398;&#32080;&#26524;&#12289;&#33258;&#28982;&#12392;&#31532;&#20108;&#12398;&#30097;&#21839;&#12364;&#29983;&#12414;&#12428;&#12390;&#12365;&#12383;&#12290;</p>
+<p><em>&#12371;&#12428;&#12425;&#12398;&#12514;&#12487;&#12523;&#12391;&#20309;&#12364;&#20316;&#12428;&#12427;&#12398;&#12363;&#12289;&#12381;&#12375;&#12390;&#12289;&#12393;&#12358;&#12420;&#12387;&#12390;&#20316;&#12428;&#12427;&#12398;&#12363;&#12290;</em></p>
+<p>&#12371;&#12398;&#30097;&#21839;&#12399;&#12289;&#26126;&#12425;&#12363;&#12395;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12398;&#21839;&#38988;&#12391;&#12399;&#12394;&#12356;&#12290;&#24037;&#23398;&#30340;&#12394;&#21839;&#38988;&#12391;&#12354;&#12427;&#12290;&#12381;&#12428;&#12395;&#31572;&#12360;&#12427;&#12383;&#12417;&#12395;&#12289;<strong>&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;</strong>&#12392;&#12356;&#12358;&#26032;&#12375;&#12356;&#23554;&#38272;&#20998;&#37326;&#12364;&#30331;&#22580;&#12375;&#12383;&#12290;</p>
+<div class="supplement ">&#65288;&#8251;&#35379;&#35387;1&#65289;&#21205;&#30011;&#20869;&#12398;&#12458;&#12502;&#12472;&#12455;&#12463;&#12488;&#12434;&#26908;&#20986;&#12377;&#12427;AI&#12514;&#12487;&#12523;&#12300;YOLOv5&#12301;&#12399;&#12289;<strong>YOLOv1&#12434;&#30330;&#34920;&#12375;&#12383;Joseph Redmon&#27663;&#12391;&#12399;&#12394;&#12367;&#12289;Glenn Jocher&#27663;&#12364;&#38283;&#30330;</strong>&#12375;&#12383;&#12290;&#12383;&#12384;&#12375;&#12289;Jocher&#27663;&#12399;&#21516;AI&#12514;&#12487;&#12523;&#12398;&#12477;&#12540;&#12473;&#12467;&#12540;&#12489;&#12399;GitHub&#12391;&#20844;&#38283;&#12375;&#12383;&#12418;&#12398;&#12418;&#12289;<strong>&#35542;&#25991;&#12434;&#30330;&#34920;&#12375;&#12390;&#12356;&#12394;&#12356;&#12290;</strong>&#12371;&#12358;&#12375;&#12383;&#20107;&#24773;&#12363;&#12425;&#12289;&#21516;AI&#12514;&#12487;&#12523;&#12395;&#12300;YOLO&#12301;&#12392;&#12356;&#12358;&#21517;&#31216;&#12434;&#20351;&#12358;&#22949;&#24403;&#24615;&#12434;&#12417;&#12368;&#12387;&#12390;&#35542;&#20105;&#12364;&#36215;&#12371;&#12387;&#12383;&#12290;&#12371;&#12398;&#35542;&#20105;&#12395;&#38306;&#12375;&#12390;&#12399;&#12289;&#12458;&#12502;&#12472;&#12455;&#12463;&#12488;&#26908;&#20986;&#25216;&#34899;&#12434;&#25552;&#20379;&#12377;&#12427;AI&#12473;&#12479;&#12540;&#12488;&#12450;&#12483;&#12503;roboflow&#12364;&#20844;&#38283;&#12375;&#12383;&#12502;&#12525;&#12464;&#35352;&#20107;&#12302;<a href="https://blog.roboflow.ai/yolov4-versus-yolov5/" target="_blank" rel="noopener noreferrer">YOLOv5&#12395;&#38306;&#12377;&#12427;&#35542;&#20105;&#12408;&#12398;&#23550;&#24540;</a>&#12303;&#12395;&#35443;&#12375;&#12367;&#35299;&#35500;&#12373;&#12428;&#12390;&#12356;&#12427;&#12290;</div>
+<h2><span id="i-2">&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12392;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12434;&#29694;&#23455;&#19990;&#30028;&#12398;&#21839;&#38988;&#12395;&#24540;&#29992;&#12377;&#12427;&#26041;&#27861;&#12391;&#12354;&#12427;</span></h2>
+<p>&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12392;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#36949;&#12356;&#12399;&#12289;&#26368;&#21021;&#12399;&#23569;&#12375;&#28961;&#24418;&#12398;&#12418;&#12398;&#12395;&#24863;&#12376;&#12427;&#12363;&#12418;&#30693;&#12428;&#12394;&#12356;&#12398;&#12391;&#12289;&#12356;&#12367;&#12388;&#12363;&#12398;&#20363;&#12434;&#35211;&#12390;&#12418;&#12425;&#12387;&#12390;&#29702;&#35299;&#12398;&#25163;&#21161;&#12369;&#12392;&#12375;&#12383;&#12356;&#12290;</p>
+<h3><span id="1">1&#65294;&#30011;&#20687;&#20998;&#39006;&#12363;&#12425;&#27231;&#26800;&#23398;&#32722;&#29983;&#25104;&#12459;&#12479;&#12525;&#12464;&#12408;</span></h3>
+<p>&#30011;&#20687;&#20998;&#39006;&#12392;&#12461;&#12540;&#12527;&#12540;&#12489;&#25277;&#20986;&#12399;&#12289;&#12381;&#12428;&#12382;&#12428;&#12467;&#12531;&#12500;&#12517;&#12540;&#12479;&#12499;&#12472;&#12519;&#12531;&#12392;&#33258;&#28982;&#35328;&#35486;&#20966;&#29702;&#12398;&#21476;&#20856;&#30340;&#12394;&#21839;&#38988;&#12391;&#12354;&#12427;&#12290;</p>
+<p>Glisten.ai&#12399;&#12289;&#20001;&#26041;&#12398;&#12479;&#12473;&#12463;&#12398;&#12383;&#12417;&#12395;&#35347;&#32244;&#12373;&#12428;&#12383;&#12514;&#12487;&#12523;&#12434;&#21516;&#26178;&#12395;&#20351;&#29992;&#12375;&#12390;&#12289;&#35069;&#21697;&#30011;&#20687;&#12363;&#12425;&#27083;&#36896;&#21270;&#12373;&#12428;&#12383;&#24773;&#22577;&#12434;&#25277;&#20986;&#12377;&#12427;API&#12434;&#20316;&#25104;&#12375;&#12383;&#65288;&#8251;&#35379;&#35387;2&#65289;&#12290;</p>
+<div id="attachment_226568" style="width: 885px" class="wp-caption aligncenter"><img class="size-full wp-image-226568" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image1.png" alt="" width="875" height="722" data-srcset="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image1.png 875w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image1-150x124.png 150w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image1-300x248.png 300w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image1-768x634.png 768w" data-sizes="(max-width: 875px) 100vw, 875px"/><p class="wp-caption-text">&#30011;&#20687;&#20986;&#20856;&#65306;<a href="https://techcrunch.com/2020/03/13/glisten-uses-computer-vision-to-break-down-fashion-photos-to-their-styles-and-parts/" target="_blank" rel="noopener noreferrer">TechCrunch</a></p></div>
+<div class="supplement ">&#65288;&#8251;&#35379;&#35387;2&#65289;Glisten.ai&#12364;&#25552;&#20379;&#12377;&#12427;API&#12362;&#12424;&#12403;&#25216;&#34899;&#30340;&#32972;&#26223;&#12395;&#38306;&#12375;&#12390;&#12399;&#12289;&#21516;&#31038;<a href="https://www.glisten.ai/" target="_blank" rel="noopener noreferrer">&#20844;&#24335;&#12469;&#12452;&#12488;</a>&#12434;&#21442;&#29031;&#12398;&#12371;&#12392;&#12290;</div>
+<p>&#12514;&#12487;&#12523;&#33258;&#20307;&#12399;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12398;&#21360;&#35937;&#30340;&#12394;&#20553;&#26989;&#12391;&#12354;&#12427;&#12290;&#12375;&#12363;&#12375;&#12289;Glisten API&#12399;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#20553;&#26989;&#12384;&#12290;</p>
+<h3><span id="2">2&#65294;&#12458;&#12502;&#12472;&#12455;&#12463;&#12488;&#26908;&#30693;&#12363;&#12425;&#23494;&#29471;&#20104;&#38450;&#12408;</span></h3>
+<p>Wildlife Protection Solution&#65288;&#30053;&#31216;&#65306;WPS&#65289;&#12399;&#12289;&#32118;&#28357;&#12398;&#21361;&#27231;&#12395;&#28693;&#12375;&#12390;&#12356;&#12427;&#31278;&#12398;&#20445;&#35703;&#12395;&#12486;&#12463;&#12494;&#12525;&#12472;&#12540;&#12434;&#21033;&#29992;&#12375;&#12390;&#12356;&#12427;&#23567;&#12373;&#12394;&#38750;&#21942;&#21033;&#22243;&#20307;&#12391;&#12354;&#12427;&#12290;&#26368;&#36817;&#12289;&#24444;&#12425;&#12399;&#12499;&#12487;&#12458;&#30435;&#35222;&#12471;&#12473;&#12486;&#12512;&#12395;&#23494;&#29471;&#32773;&#12434;&#35469;&#35672;&#12377;&#12427;&#12383;&#12417;&#12395;&#35347;&#32244;&#12373;&#12428;&#12383;&#12458;&#12502;&#12472;&#12455;&#12463;&#12488;&#26908;&#20986;&#12514;&#12487;&#12523;&#12434;&#32068;&#12415;&#36796;&#12416;&#12392;&#12356;&#12358;&#12450;&#12483;&#12503;&#12464;&#12524;&#12540;&#12489;&#12434;&#34892;&#12387;&#12383;&#12290;&#12371;&#12398;&#12514;&#12487;&#12523;&#12398;&#26908;&#20986;&#29575;&#12399;&#12377;&#12391;&#12395;<strong>2&#20493;</strong>&#12392;&#12394;&#12387;&#12390;&#12356;&#12427;&#12290;</p>
+<div id="attachment_226569" style="width: 885px" class="wp-caption aligncenter"><img class="size-full wp-image-226569" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image2.jpg" alt="" width="875" height="957" data-srcset="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image2.jpg 875w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image2-137x150.jpg 137w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image2-274x300.jpg 274w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image2-768x840.jpg 768w" data-sizes="(max-width: 875px) 100vw, 875px"/><p class="wp-caption-text">&#30011;&#20687;&#20986;&#20856;&#65306;<a href="https://silverpond.com.au/case-studies/wildlife-protection-solutions/" target="_blank" rel="noopener noreferrer">Silverpond</a></p></div>
+<p>YOLOv4&#12398;&#12424;&#12358;&#12394;&#12458;&#12502;&#12472;&#12455;&#12463;&#12488;&#26908;&#20986;&#12514;&#12487;&#12523;&#12399;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12398;&#25104;&#21151;&#20363;&#12391;&#12354;&#12426;&#12289;WPS&#12364;&#12514;&#12487;&#12523;&#12398;&#35347;&#32244;&#12395;&#20351;&#29992;&#12375;&#12383;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12391;&#12354;&#12427;Highlighter&#12399;&#21360;&#35937;&#30340;&#12394;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12484;&#12540;&#12523;&#12391;&#12354;&#12427;&#65288;&#8251;&#35379;&#35387;3&#65289;&#12290;&#12375;&#12363;&#12375;&#12289;WPS&#12398;&#23494;&#29471;&#32773;&#26908;&#20986;&#12471;&#12473;&#12486;&#12512;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#20553;&#26989;&#12384;&#12290;</p>
+<div class="supplement ">&#65288;&#8251;&#35379;&#35387;3&#65289;&#20197;&#19978;&#12395;&#35299;&#35500;&#12373;&#12428;&#12383;&#23494;&#29471;&#20104;&#38450;&#12471;&#12473;&#12486;&#12512;&#12399;&#12289;WPS&#12392;AI&#12473;&#12479;&#12540;&#12488;&#12450;&#12483;&#12503;<a href="https://silverpond.com.au/" target="_blank" rel="noopener noreferrer">Silverpond</a>&#12364;&#20849;&#21516;&#12375;&#12390;&#38283;&#30330;&#12375;&#12383;&#12290;&#12371;&#12398;&#38283;&#30330;&#12395;&#20351;&#12431;&#12428;&#12383;&#12398;&#12364;&#12289;silverpond&#12364;&#25552;&#20379;&#12377;&#12427;AI&#12484;&#12540;&#12523;<a href="https://silverpond.com.au/highlighter/" target="_blank" rel="noopener noreferrer">HighLigter</a>&#12391;&#12354;&#12427;&#12290;&#21516;&#23494;&#29471;&#20104;&#38450;&#12471;&#12473;&#12486;&#12512;&#12395;&#38306;&#12377;&#12427;&#35443;&#32048;&#12399;<a href="https://silverpond.com.au/wp-content/uploads/2019/09/WPS-Casestudy-Highlighter-web.pdf" target="_blank" rel="noopener noreferrer">&#12371;&#12385;&#12425;</a>&#12434;&#21442;&#29031;&#12398;&#12371;&#12392;&#12290;</div>
+<h3><span id="3COVID19">3&#65294;&#27231;&#26800;&#32763;&#35379;&#12363;&#12425;COVID19&#12398;&#12512;&#12540;&#12531;&#12471;&#12519;&#12483;&#12488;&#12408;</span></h3>
+<p>&#27231;&#26800;&#32763;&#35379;&#12392;&#12399;&#12289;&#12487;&#12540;&#12479;&#12434;&#12354;&#12427;&#24418;&#24335;&#12363;&#12425;&#21029;&#12398;&#24418;&#24335;&#12395;&#12300;&#32763;&#35379;&#12301;&#12377;&#12427;&#12383;&#12417;&#12395;&#27231;&#26800;&#23398;&#32722;&#12434;&#20351;&#29992;&#12377;&#12427;&#12371;&#12392;&#12434;&#25351;&#12375;&#12289;&#20154;&#38291;&#12398;&#35328;&#35486;&#38291;&#12398;&#22580;&#21512;&#12418;&#12354;&#12428;&#12400;&#12289;&#20840;&#12367;&#30064;&#12394;&#12427;&#24418;&#24335;&#12398;&#22580;&#21512;&#12418;&#12354;&#12427;&#12290;</p>
+<p>PostEra&#12399;&#12289;&#27231;&#26800;&#32763;&#35379;&#12434;&#21033;&#29992;&#12375;&#12390;&#21270;&#21512;&#29289;&#12434;&#24037;&#23398;&#30340;&#12394;&#35373;&#35336;&#22259;&#12395;&#12300;&#32763;&#35379;&#12301;&#12377;&#12427;&#34220;&#21270;&#23398;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12384;&#12290;&#29694;&#22312;&#12289;&#21270;&#23398;&#32773;&#12399;&#12289;COVID19&#12398;&#27835;&#30274;&#27861;&#12434;&#35211;&#12388;&#12369;&#12427;&#12383;&#12417;&#12398;&#12458;&#12540;&#12503;&#12531;&#12477;&#12540;&#12473;&#12398;&#21462;&#12426;&#32068;&#12415;&#12391;&#12371;&#12398;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12434;&#20351;&#29992;&#12375;&#12390;&#12356;&#12427;&#12290;</p>
+<div style="width: 610px" class="wp-caption aligncenter"><img class="size-full" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://miro.medium.com/max/750/0*OdIteU7Q6rJ__ywD.gif" width="600" height="450"/><p class="wp-caption-text">&#30011;&#20687;&#20986;&#20856;&#65306;<a href="https://postera.ai/demo" target="_blank" rel="noopener noreferrer">PostEra</a></p></div>
+<p>&#20998;&#23376;&#12434;&#19968;&#36899;&#12398;&#65288;&#20998;&#23376;&#12363;&#12425;&#21029;&#12398;&#20998;&#23376;&#12408;&#12398;&#22793;&#25563;&#12377;&#12427;&#65289;&#12300;&#12523;&#12540;&#12488;&#12301;&#12395;&#22793;&#25563;&#12391;&#12365;&#12427;&#12514;&#12487;&#12523;&#12434;&#38283;&#30330;&#12377;&#12427;&#12371;&#12392;&#12399;&#12289;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12398;&#20553;&#26989;&#12391;&#12354;&#12427;&#12290;PostEra&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12398;&#27083;&#31689;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#20553;&#26989;&#12391;&#12354;&#12427;&#65288;&#8251;&#35379;&#35387;4&#65289;&#12290;</p>
+<div class="supplement ">&#65288;&#8251;&#35379;&#35387;4&#65289;PostEra&#12398;&#35443;&#32048;&#12399;&#12289;<a href="https://postera.ai/" target="_blank" rel="noopener noreferrer">&#20844;&#24335;&#12469;&#12452;&#12488;</a>&#12434;&#21442;&#29031;&#12398;&#12371;&#12392;&#12290;</div>
+<h3><span id="4">4&#65294;&#12486;&#12461;&#12473;&#12488;&#29983;&#25104;&#12363;&#12425;&#27231;&#26800;&#23398;&#32722;&#12398;&#12480;&#12531;&#12472;&#12519;&#12531;&#12510;&#12473;&#12479;&#12540;&#12408;</span></h3>
+<p>OpenAI&#12398;GPT-2&#12399;&#12289;&#12522;&#12522;&#12540;&#12473;&#24403;&#26178;&#12289;&#21490;&#19978;&#26368;&#12418;&#12497;&#12527;&#12501;&#12523;&#12394;&#12486;&#12461;&#12473;&#12488;&#29983;&#25104;&#12514;&#12487;&#12523;&#12391;&#12354;&#12387;&#12383;&#12290;15&#20740;&#12392;&#12356;&#12358;&#38750;&#24120;&#35672;&#12394;&#12497;&#12521;&#12513;&#12540;&#12479;&#12434;&#25345;&#12385;&#12289;transformer&#12514;&#12487;&#12523;&#12398;&#36914;&#21270;&#12395;&#22823;&#12365;&#12394;&#36275;&#36321;&#12434;&#27531;&#12375;&#12383;&#12290;</p>
+<p>AI Dungeon&#12399;&#12289;&#12402;&#12397;&#12426;&#12434;&#21152;&#12360;&#12383;&#21476;&#20856;&#30340;&#12394;&#12480;&#12531;&#12472;&#12519;&#12531;&#12463;&#12525;&#12540;&#12521;&#12540;&#12384;&#65288;&#8251;&#35379;&#35387;5&#65289;&#65306;&#12381;&#12398;&#12480;&#12531;&#12472;&#12519;&#12531;&#12510;&#12473;&#12479;&#12540;&#12399;&#12289;&#23455;&#12398;&#12392;&#12371;&#12429;&#12289;&#12503;&#12524;&#12452;&#12516;&#12540;&#33258;&#36523;&#12395;&#12424;&#12387;&#12390;&#36984;&#25246;&#12373;&#12428;&#12383;&#20882;&#38522;&#12398;&#12473;&#12488;&#12540;&#12522;&#12540;&#12395;&#38306;&#12377;&#12427;&#12486;&#12461;&#12473;&#12488;&#12391;&#12501;&#12449;&#12452;&#12531;&#12481;&#12517;&#12540;&#12491;&#12531;&#12464;&#12373;&#12428;&#12383;GPT-2&#12391;&#12354;&#12387;&#12383;&#12290;</p>
+<blockquote class="twitter-tweet" data-width="550">
+<p lang="en" dir="ltr">Reddit find of the day &#128514; anyone else have any luck getting your dragon car insurance? <a href="https://t.co/TGQh3Tju89">pic.twitter.com/TGQh3Tju89</a></p>
+<p>&mdash; AI Dungeon (@AiDungeon) <a href="https://twitter.com/AiDungeon/status/1277352539101356032?ref_src=twsrc%5Etfw">June 28, 2020</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>GPT-2&#12398;&#35347;&#32244;&#12399;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12398;&#27508;&#21490;&#30340;&#20553;&#26989;&#12384;&#12290;&#12381;&#12428;&#12434;&#20351;&#12387;&#12390;&#12480;&#12531;&#12472;&#12519;&#12531;&#12463;&#12525;&#12540;&#12521;&#12540;&#12434;&#27083;&#31689;&#12377;&#12427;&#12371;&#12392;&#12399; &#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#20553;&#26989;&#12391;&#12354;&#12427;&#12290;</p>
+<p>&#20197;&#19978;&#12395;&#25369;&#12370;&#12383;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12399;&#12377;&#12409;&#12390;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12398;&#32937;&#12398;&#19978;&#12395;&#31435;&#12387;&#12390;&#12356;&#12427;&#12290;&#12371;&#12428;&#12425;&#12398;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12399;&#12289;&#12479;&#12473;&#12463;&#12398;&#12383;&#12417;&#12395;&#12514;&#12487;&#12523;&#12434;&#35347;&#32244;&#12391;&#12365;&#12394;&#12369;&#12428;&#12400;&#27231;&#33021;&#12375;&#12394;&#12356;&#12290;&#12375;&#12363;&#12375;&#12289;&#12371;&#12428;&#12425;&#12398;&#12514;&#12487;&#12523;&#12434;&#29694;&#23455;&#19990;&#30028;&#12398;&#21839;&#38988;&#12395;&#24540;&#29992;&#12377;&#12427;&#12383;&#12417;&#12395;&#12399;&#12289;&#12450;&#12503;&#12522;&#12465;&#12540;&#12471;&#12519;&#12531;&#12395;&#32068;&#12415;&#36796;&#12416;&#24517;&#35201;&#12364;&#12354;&#12427;&#12398;&#12384;&#12290;</p>
+<p>&#21029;&#12398;&#35328;&#12356;&#26041;&#12434;&#12377;&#12428;&#12400;&#12289;<span style="background-color: #ffff00;"><strong>&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12392;&#12399;&#12289;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12398;&#12452;&#12494;&#12505;&#12540;&#12471;&#12519;&#12531;&#12364;&#27231;&#26800;&#23398;&#32722;&#12398;&#30740;&#31350;&#12398;&#22806;&#12391;&#38997;&#22312;&#21270;&#12377;&#12427;&#26041;&#27861;&#12394;&#12398;&#12384;&#12290;</strong></span></p>
+<p>&#12375;&#12363;&#12375;&#12394;&#12364;&#12425;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12364;&#25552;&#31034;&#12377;&#12427;&#20013;&#24515;&#30340;&#12394;&#35506;&#38988;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12364;&#20840;&#12367;&#26032;&#12375;&#12356;&#12459;&#12486;&#12468;&#12522;&#12540;&#12398;&#24037;&#23398;&#30340;&#21839;&#38988;&#12434;&#23566;&#20837;&#12377;&#12427;&#12371;&#12392;&#12391;&#12354;&#12426;&#12289;&#12381;&#12358;&#12375;&#12383;&#21839;&#38988;&#12395;&#12388;&#12356;&#12390;&#31169;&#12383;&#12385;&#12399;&#12414;&#12384;&#31777;&#21336;&#12395;&#31572;&#12360;&#12425;&#12428;&#12394;&#12356;&#12398;&#12384;&#12290;</p>
+<div class="supplement ">&#65288;&#8251;&#35379;&#35387;5&#65289;AI Dungeon&#12399;&#12289;<a href="https://play.aidungeon.io/" target="_blank" rel="noopener noreferrer">&#12371;&#12385;&#12425;</a>&#12363;&#12425;&#23455;&#38555;&#12395;&#12503;&#12524;&#12452;&#12391;&#12365;&#12427;&#65288;&#12383;&#12384;&#12375;&#33521;&#25991;&#34920;&#31034;&#65289;&#12290;&#12414;&#12383;&#12289;&#21516;&#12466;&#12540;&#12512;&#12398;&#25216;&#34899;&#30340;&#32972;&#26223;&#12395;&#38306;&#12375;&#12390;&#12399;AINOW&#32763;&#35379;&#35352;&#20107;&#12302;<a href="https://ainow.ai/2020/03/11/183804/" target="_blank" rel="noopener noreferrer">&#12487;&#12451;&#12540;&#12503;&#12521;&#12540;&#12491;&#12531;&#12464;&#12399;&#12418;&#12358;&#38627;&#12375;&#12367;&#12394;&#12356;</a>&#12303;&#12434;&#21442;&#29031;&#12398;&#12371;&#12392;&#12290;</div>
+<h2><span id="i-3">&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12395;&#12399;&#20309;&#12364;&#12354;&#12427;&#12398;&#12363;</span></h2>
+<p>&#39640;&#12524;&#12505;&#12523;&#12391;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12392;&#12399;&#12289;&#35347;&#32244;&#12373;&#12428;&#12383;&#12514;&#12487;&#12523;&#12434;&#21462;&#24471;&#12375;&#12289;&#29983;&#29987;&#30340;&#12450;&#12503;&#12522;&#12465;&#12540;&#12471;&#12519;&#12531;&#12434;&#27083;&#31689;&#12377;&#12427;&#12383;&#12417;&#12395;&#24517;&#35201;&#12394;&#12377;&#12409;&#12390;&#12398;&#12479;&#12473;&#12463;&#12434;&#25351;&#12375;&#12390;&#12356;&#12427;&#12392;&#35328;&#12360;&#12427;&#12290;</p>
+<img class="aligncenter size-full wp-image-226574" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3.png" alt="" width="875" height="374" data-srcset="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3.png 875w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3-150x64.png 150w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3-300x128.png 300w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3-768x328.png 768w" data-sizes="(max-width: 875px) 100vw, 875px"/><div class="supplement ">&#65288;&#8251;&#35379;&#35387;6&#65289;&#20197;&#19978;&#12398;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12392;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#36949;&#12356;&#12434;&#35222;&#35226;&#21270;&#12375;&#12383;&#27169;&#24335;&#22259;&#12391;&#12399;&#12289;&#20001;&#32773;&#12398;&#12479;&#12473;&#12463;&#12434;&#20197;&#19979;&#12398;&#12424;&#12358;&#12395;&#12414;&#12392;&#12417;&#12390;&#12356;&#12427;&#12290;
+<img class="aligncenter size-full wp-image-226590" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image9.png" alt="" width="905" height="377" data-srcset="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image9.png 905w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image9-150x62.png 150w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image9-300x125.png 300w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image9-768x320.png 768w" data-sizes="(max-width: 905px) 100vw, 905px"/><p style="text-align: center;"><span style="font-size: 9pt;">&#30011;&#20687;&#20986;&#20856;&#65306;&#32763;&#35379;&#32773;&#12364;&#20316;&#25104;</span></p>
+</div>
+<p>&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#12479;&#12473;&#12463;&#12434;&#12424;&#12426;&#20855;&#20307;&#21270;&#12377;&#12427;&#12383;&#12417;&#12395;&#12289;&#31777;&#21336;&#12394;&#20363;&#12434;&#25369;&#12370;&#12390;&#12415;&#12424;&#12358;&#12290;</p>
+<p>&#27231;&#26800;&#23398;&#32722;&#12434;&#39366;&#20351;&#12375;&#12383;&#12480;&#12531;&#12472;&#12519;&#12531;&#12463;&#12525;&#12540;&#12521;&#12540;&#12391;&#12354;&#12427;AI Dungeon&#12395;&#35441;&#12434;&#25147;&#12381;&#12358;&#12290;&#12371;&#12398;&#12466;&#12540;&#12512;&#12398;&#12450;&#12540;&#12461;&#12486;&#12463;&#12481;&#12515;&#12399;&#12471;&#12531;&#12503;&#12523;&#12384;&#12290;&#12503;&#12524;&#12452;&#12516;&#12540;&#12364;&#12486;&#12461;&#12473;&#12488;&#12434;&#20837;&#21147;&#12375;&#12289;&#12466;&#12540;&#12512;&#12364;&#12514;&#12487;&#12523;&#12434;&#21628;&#12403;&#20986;&#12375;&#12289;&#21628;&#12400;&#12428;&#12383;&#12514;&#12487;&#12523;&#12364;&#12524;&#12473;&#12509;&#12531;&#12473;&#12434;&#29983;&#25104;&#12375;&#12289;&#12466;&#12540;&#12512;&#12364;&#12381;&#12428;&#12434;&#34920;&#31034;&#12377;&#12427;&#12290;&#12371;&#12398;&#12503;&#12525;&#12475;&#12473;&#12434;&#27083;&#31689;&#12377;&#12427;&#26126;&#30333;&#12394;&#26041;&#27861;&#12399;&#12289;&#12514;&#12487;&#12523;&#12434;&#12510;&#12452;&#12463;&#12525;&#12469;&#12540;&#12499;&#12473;&#12392;&#12375;&#12390;&#23455;&#35013;&#12377;&#12427;&#12371;&#12392;&#12384;&#12290;</p>
+<p>&#29702;&#35542;&#30340;&#12395;&#12399;&#12289;AI Dungeon&#12398;&#23455;&#35013;&#12399;&#20182;&#12398;Web&#12469;&#12540;&#12499;&#12473;&#12398;&#12381;&#12428;&#12392;&#20284;&#12390;&#12356;&#12427;&#12399;&#12378;&#12384;&#12290;&#12514;&#12487;&#12523;&#12434;FastAPI&#12398;&#12424;&#12358;&#12394;API&#12391;&#12521;&#12483;&#12503;&#12375;&#12289;Docker&#12391;&#12467;&#12531;&#12486;&#12490;&#21270;&#12375;&#12289;Kubernetes&#12463;&#12521;&#12473;&#12479;&#12395;&#23455;&#35013;&#12375;&#12289;&#12525;&#12540;&#12489;&#12496;&#12521;&#12531;&#12469;&#8213;&#12434;&#20351;&#12387;&#12390;&#20844;&#38283;&#12377;&#12427;&#12290;</p>
+<div id="attachment_226575" style="width: 885px" class="wp-caption aligncenter"><img class="size-full wp-image-226575" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image4.png" alt="" width="875" height="520" data-srcset="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image4.png 875w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image4-150x89.png 150w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image4-300x178.png 300w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image4-768x456.png 768w" data-sizes="(max-width: 875px) 100vw, 875px"/><p class="wp-caption-text">&#30011;&#20687;&#20986;&#20856;&#65306;<a href="https://github.com/cortexlabs/cortex" target="_blank" rel="noopener noreferrer">Cortex inference architecture</a></p></div>
+<div class="supplement ">&#65288;&#8251;&#35379;&#35387;7&#65289;&#19978;&#22259;&#12399;&#12289;&#26412;&#35352;&#20107;&#33879;&#32773;&#12398;Kaiser&#27663;&#12364;&#38283;&#30330;&#12395;&#38306;&#12431;&#12427;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#25903;&#25588;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;Cortex&#12398;&#12450;&#12540;&#12461;&#12486;&#12463;&#12481;&#12515;&#22259;&#12290;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12391;&#12399;&#12394;&#12367;&#12289;<strong>&#20253;&#32113;&#30340;&#12394;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#35373;&#35336;&#24605;&#24819;&#12395;&#21063;&#12387;&#12390;&#27083;&#31689;</strong>&#12373;&#12428;&#12390;&#12356;&#12427;&#12290;</div>
+<p>&#23455;&#38555;&#12395;&#12399;&#12289;GPT-2&#12398;&#23455;&#35013;&#12399;&#35079;&#38609;&#12391;&#12354;&#12427;&#12290;</p>
+<ul><li>GPT-2&#12399;&#24040;&#22823;&#12384;&#12290;&#23436;&#20840;&#12395;&#35347;&#32244;&#12373;&#12428;&#12383;&#12514;&#12487;&#12523;&#12399;5GB&#12434;&#36229;&#12360;&#12427;&#12290;&#12381;&#12428;&#12434;&#25552;&#20379;&#12377;&#12427;&#12383;&#12417;&#12395;&#12399;&#12289;&#22823;&#35215;&#27169;&#12394;&#12452;&#12531;&#12473;&#12479;&#12531;&#12473;&#12479;&#12452;&#12503;&#12391;&#12503;&#12525;&#12499;&#12472;&#12519;&#12491;&#12531;&#12464;&#12373;&#12428;&#12383;&#12463;&#12521;&#12473;&#12479;&#12364;&#24517;&#35201;&#12384;&#12290;</li>
+<li>GPT-2&#12399;&#12522;&#12477;&#12540;&#12473;&#12434;&#22823;&#37327;&#12395;&#28040;&#36027;&#12377;&#12427;&#12290;1&#12388;&#12398;&#20104;&#28204;&#12391;GPU&#12434;&#38263;&#26178;&#38291;&#12525;&#12483;&#12463;&#12450;&#12483;&#12503;&#12377;&#12427;&#12371;&#12392;&#12364;&#12354;&#12427;&#12290;&#20302;&#12524;&#12452;&#12486;&#12531;&#12471;&#12434;&#23455;&#29694;&#12377;&#12427;&#12398;&#12399;&#38627;&#12375;&#12367;&#12289;1&#12388;&#12398;&#12452;&#12531;&#12473;&#12479;&#12531;&#12473;&#12391;&#12399;&#19968;&#24230;&#12395;&#22810;&#12367;&#12398;&#12522;&#12463;&#12456;&#12473;&#12488;&#12434;&#20966;&#29702;&#12391;&#12365;&#12394;&#12356;&#12290;</li>
+<li>GPT-2 &#12399;&#39640;&#20385;&#12391;&#12354;&#12427;&#12290;&#20197;&#19978;&#12395;&#25369;&#12370;&#12383;&#20107;&#23455;&#12398;&#32080;&#26524;&#12289;GPT-2&#12434;&#26412;&#30058;&#29872;&#22659;&#12395;&#23455;&#35013;&#12377;&#12427;&#26178;&#12289;&#12381;&#12428;&#12394;&#12426;&#12398;&#12488;&#12521;&#12501;&#12451;&#12483;&#12463;&#12364;&#12354;&#12427;&#12392;&#20206;&#23450;&#12375;&#12383;&#22580;&#21512;&#12289;&#22810;&#12367;&#12398;&#22823;&#35215;&#27169;&#12394;GPU&#12452;&#12531;&#12473;&#12479;&#12531;&#12473;&#12434;&#23455;&#34892;&#12377;&#12427;&#12371;&#12392;&#12395;&#12394;&#12426;&#12289;&#12467;&#12473;&#12488;&#12364;&#39640;&#12367;&#12394;&#12427;&#12290;</li>
+</ul><p>AI Dungeon&#12398;&#12522;&#12522;&#12540;&#12473;&#24460;&#12377;&#12368;&#12395;100&#19975;&#20154;&#20197;&#19978;&#12398;&#12503;&#12524;&#12452;&#12516;&#12540;&#12364;&#12503;&#12524;&#12452;&#12375;&#12383;&#12371;&#12392;&#12434;&#32771;&#12360;&#12427;&#12392;&#12289;&#20197;&#19978;&#12398;&#21839;&#38988;&#12399;&#12424;&#12426;&#28145;&#21051;&#12395;&#12394;&#12427;&#12290;</p>
+<p>&#21177;&#29575;&#30340;&#12395;&#39366;&#21205;&#12377;&#12427;API&#12398;&#35352;&#36848;&#12289;GPU&#12452;&#12531;&#12473;&#12479;&#12531;&#12473;&#12434;&#29992;&#12356;&#12383;&#12463;&#12521;&#12473;&#12479;&#12398;&#12503;&#12525;&#12499;&#12472;&#12519;&#12491;&#12531;&#12464;&#12289;&#12467;&#12473;&#12488;&#12434;&#26368;&#36969;&#21270;&#12377;&#12427;&#12383;&#12417;&#12398;&#12473;&#12509;&#12483;&#12488;&#12452;&#12531;&#12473;&#12479;&#12531;&#12473;&#12398;&#20351;&#29992;&#12289;&#25512;&#35542;&#12527;&#12540;&#12463;&#12525;&#12540;&#12489;&#12398;&#12383;&#12417;&#12398;&#12458;&#12540;&#12488;&#12473;&#12465;&#12540;&#12522;&#12531;&#12464;&#12398;&#35373;&#23450;&#12289;&#12514;&#12487;&#12523;&#12434;&#26356;&#26032;&#12377;&#12427;&#12383;&#12403;&#12395;API&#12364;&#12463;&#12521;&#12483;&#12471;&#12517;&#12375;&#12394;&#12356;&#12424;&#12358;&#12395;&#12525;&#12540;&#12522;&#12531;&#12464;&#12450;&#12483;&#12503;&#12487;&#12540;&#12488;&#12434;&#23455;&#35013;&#12377;&#12427;&#12394;&#12393;&#12289;&#22810;&#12367;&#12398;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#20316;&#26989;&#12364;&#12354;&#12427;&#12398;&#12384;&#12364;&#12289;&#12371;&#12428;&#12425;&#12399;&#27231;&#26800;&#23398;&#32722;&#12398;<em>&#12471;&#12531;&#12503;&#12523;&#12394;</em>&#24540;&#29992;&#12384;&#12290;</p>
+<p>&#22810;&#12367;&#12398;&#27231;&#26800;&#23398;&#32722;&#12450;&#12503;&#12522;&#12465;&#12540;&#12471;&#12519;&#12531;&#12395;&#20849;&#36890;&#12375;&#12390;&#24517;&#35201;&#12392;&#12373;&#12428;&#12427;&#27231;&#33021;&#12392;&#12375;&#12390;&#12399;&#65292;&#12488;&#12524;&#12540;&#12491;&#12531;&#12464;&#65292;&#12514;&#12491;&#12479;&#12522;&#12531;&#12464;&#65292;&#12510;&#12523;&#12481;&#12514;&#12487;&#12523;&#12398;&#12456;&#12531;&#12489;&#12509;&#12452;&#12531;&#12488;&#65292;&#12496;&#12483;&#12481;&#20104;&#28204;&#12394;&#12393;&#12364;&#12354;&#12427;&#12364;&#65292;&#12381;&#12428;&#12382;&#12428;&#12398;&#27231;&#33021;&#12364;&#35079;&#38609;&#12373;&#12398;&#12524;&#12505;&#12523;&#12434;&#22823;&#12365;&#12367;&#24341;&#12365;&#19978;&#12370;&#12427;&#12371;&#12392;&#12395;&#12394;&#12427;&#12290;</p>
+<p>&#12371;&#12428;&#12425;&#12398;&#21839;&#38988;&#12434;&#35299;&#27770;&#12377;&#12427;&#12398;&#12364;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12398;&#65288;&#32068;&#32340;&#12395;&#12424;&#12387;&#12390;&#12399;&#27231;&#26800;&#23398;&#32722;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12481;&#12540;&#12512;&#12392;&#36899;&#25658;&#12375;&#12390;&#34892;&#12358;&#65289;&#20181;&#20107;&#12391;&#12354;&#12426;&#12289;&#27231;&#26800;&#23398;&#32722;&#12434;&#25201;&#12358;&#12383;&#12417;&#12398;&#12484;&#12540;&#12523;&#12398;&#12411;&#12392;&#12435;&#12393;&#12364;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12391;&#12399;&#12394;&#12367;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12398;&#12383;&#12417;&#12395;&#35373;&#35336;&#12373;&#12428;&#12390;&#12356;&#12427;&#12392;&#12356;&#12358;&#20107;&#23455;&#12395;&#12424;&#12387;&#12390;&#12289;&#24444;&#12425;&#12398;&#20181;&#20107;&#12399;&#38750;&#24120;&#12395;&#38627;&#12375;&#12367;&#12394;&#12387;&#12390;&#12356;&#12427;&#12290;</p>
+<p>&#24184;&#12356;&#12394;&#12371;&#12392;&#12395;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12395;&#12414;&#12388;&#12431;&#12427;&#22256;&#38627;&#12373;&#12399;&#22793;&#12431;&#12426;&#12388;&#12388;&#12354;&#12427;&#12290;</p>
+<h2><span id="i-4">&#31169;&#12383;&#12385;&#12399;&#12289;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12391;&#12399;&#12394;&#12367;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#12383;&#12417;&#12398;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12434;&#27083;&#31689;&#12375;&#12390;&#12356;&#12427;</span></h2>
+<p>&#25968;&#24180;&#21069;&#12289;&#31169;&#12383;&#12385;&#12398;&#12414;&#12431;&#12426;&#12395;&#12356;&#12383;&#20309;&#20154;&#12363;&#12364;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12363;&#12425;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12395;&#31227;&#34892;&#12375;&#12383;&#12290;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12398;&#12527;&#12540;&#12463;&#12501;&#12525;&#12540;&#12434;&#12495;&#12483;&#12463;&#12375;&#12383;&#12426;&#12289;&#27231;&#26800;&#23398;&#32722;&#12450;&#12503;&#12522;&#12465;&#12540;&#12471;&#12519;&#12531;&#12434;&#21205;&#20316;&#12373;&#12379;&#12427;&#12383;&#12417;&#12398;&#12464;&#12523;&#12540;&#12467;&#12540;&#12489;&#12434;&#26360;&#12356;&#12383;&#12426;&#12375;&#12390;&#25968;&#36913;&#38291;&#12434;&#36942;&#12372;&#12375;&#12383;&#24460;&#12289;&#31169;&#12383;&#12385;&#12399;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#21407;&#21063;&#12434;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12395;&#12393;&#12358;&#12420;&#12387;&#12390;&#24540;&#29992;&#12391;&#12365;&#12427;&#12363;&#12434;&#32771;&#12360;&#22987;&#12417;&#12383;&#12290;</p>
+<p>&#20363;&#12360;&#12400; AI Dungeon &#12434;&#35211;&#12390;&#12415;&#12424;&#12358;&#12290;&#12371;&#12398;&#12450;&#12503;&#12522;&#12398;&#38283;&#30330;&#32773;&#12364;GPT-2&#12434;&#20171;&#12373;&#12394;&#12356;&#36890;&#24120;&#12398;API&#12434;&#27083;&#31689;&#12375;&#12390;&#12356;&#12383;&#12392;&#12375;&#12383;&#12425;&#12289;Lambda&#12398;&#12424;&#12358;&#12394;&#12418;&#12398;&#12434;&#20351;&#12387;&#12390;15&#20998;&#12391;API&#12434;&#31435;&#12385;&#19978;&#12370;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12383;&#12384;&#12429;&#12358;&#12290;&#12375;&#12363;&#12375;&#12289;GPT-2 &#12434;&#25552;&#20379;&#12377;&#12427;&#12395;&#12399; &#27231;&#26800;&#23398;&#32722;&#22266;&#26377;&#12398;&#35506;&#38988;&#12364;&#12354;&#12427;&#12383;&#12417;&#12289;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12395;&#12424;&#12427;&#12458;&#12540;&#12465;&#12473;&#12488;&#12524;&#12540;&#12471;&#12519;&#12531;&#12484;&#12540;&#12523;&#12399;&#27231;&#33021;&#12375;&#12394;&#12356;&#12290;</p>
+<p>&#12375;&#12363;&#12375;&#12289;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#21407;&#29702;&#21407;&#21063;&#12434;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12395;&#24540;&#29992;&#12377;&#12409;&#12365;&#12391;&#12399;&#12394;&#12356;&#29702;&#30001;&#12399;&#12354;&#12427;&#12398;&#12384;&#12429;&#12358;&#12363;&#12290;</p>
+<p>&#12381;&#12371;&#12391;&#31169;&#12383;&#12385;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#12383;&#12417;&#12398;&#12484;&#12540;&#12523;&#12289;&#12388;&#12414;&#12426;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#21407;&#29702;&#12434;&#27231;&#26800;&#23398;&#32722;&#12395;&#24540;&#29992;&#12377;&#12427;&#12484;&#12540;&#12523;&#12398;&#38283;&#30330;&#12395;&#30528;&#25163;&#12375;&#12383;&#12290;<a href="https://github.com/cortexlabs/cortex" target="_blank" rel="noopener noreferrer">&#24403;&#31038;&#12398;&#12458;&#12540;&#12503;&#12531;&#12477;&#12540;&#12473;API&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12391;&#12354;&#12427;Cortex</a>&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12364;&#12289;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12394;&#12425;&#35504;&#12418;&#12364;&#30693;&#12387;&#12390;&#12356;&#12427;&#12452;&#12531;&#12479;&#12540;&#12501;&#12455;&#12540;&#12473;&#12434;&#20351;&#12387;&#12390;&#12289;&#12514;&#12487;&#12523;&#12434;API&#12392;&#12375;&#12390;&#23455;&#35013;&#12377;&#12427;&#12371;&#12392;&#12434;&#21487;&#33021;&#12394;&#38480;&#12426;&#31777;&#21336;&#12395;&#12375;&#12390;&#12356;&#12427;&#12290;</p>
+<div style="width: 1930px" class="wp-caption aligncenter"><img class="size-full" src="https://miro.medium.com/max/875/0*CQAsYDXiUUW52nOK" width="1920" height="1080"/><p class="wp-caption-text">&#30011;&#20687;&#20986;&#20856;&#65306;<a href="https://github.com/cortexlabs/cortex" target="_blank" rel="noopener noreferrer">Cortex repo</a></p></div>
+<p>&#27231;&#26800;&#23398;&#32722;&#12434;&#24847;&#35672;&#12375;&#12383;API&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12399;&#12289;AI Dungeon&#12434;&#12399;&#12376;&#12417;&#12289;&#19978;&#35352;&#12395;&#25369;&#12370;&#12383;&#20182;&#12398;&#27231;&#26800;&#23398;&#32722;&#12473;&#12479;&#12540;&#12488;&#12450;&#12483;&#12503;&#12364;&#12514;&#12487;&#12523;&#12434;&#23455;&#35013;&#12377;&#12427;&#38555;&#12395;&#20351;&#29992;&#12373;&#12428;&#12390;&#12356;&#12383;&#12418;&#12398;&#12391;&#12354;&#12427;&#12290;&#12381;&#12398;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12398;&#32972;&#24460;&#12395;&#12354;&#12427;&#35373;&#35336;&#21746;&#23398;&#12289;&#12381;&#12375;&#12390;Cortex&#12391;&#12398;&#12377;&#12409;&#12390;&#12398;&#20181;&#20107;&#12399;&#12289;&#38750;&#24120;&#12395;&#12471;&#12531;&#12503;&#12523;&#12384;&#12290;</p>
+<p><strong>&#31169;&#12383;&#12385;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#35506;&#38988;&#12434;&#12289;&#12487;&#12540;&#12479;&#12469;&#12452;&#12456;&#12531;&#12473;&#12391;&#12399;&#12394;&#12367;&#12289;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#35506;&#38988;&#12392;&#12375;&#12390;&#25201;&#12387;&#12390;&#12356;&#12427;&#12290;</strong></p>
+<p>&#27231;&#26800;&#23398;&#32722;API&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12391;&#12399;&#12289;&#12496;&#12540;&#12472;&#12519;&#12531;&#31649;&#29702;&#12364;&#38627;&#12375;&#12367;&#12289;&#38560;&#12428;&#12383;&#29366;&#24907;&#12395;&#20381;&#23384;&#12375;&#12289;&#20219;&#24847;&#12398;&#23455;&#34892;&#38918;&#24207;&#12364;&#21487;&#33021;&#12394;&#12494;&#12540;&#12488;&#12502;&#12483;&#12463;&#12398;&#20195;&#12431;&#12426;&#12395;&#12289;YAML&#12392;Python&#12501;&#12449;&#12452;&#12523;&#12434;&#20351;&#29992;&#12377;&#12427;&#12290;&#12300;&#12487;&#12503;&#12525;&#12452;&#12301;&#12508;&#12479;&#12531;&#12398;&#12354;&#12427;GUI&#12398;&#20195;&#12431;&#12426;&#12395;&#12289;&#23455;&#38555;&#12395;&#23455;&#35013;&#12434;&#31649;&#29702;&#12391;&#12365;&#12427;&#12467;&#12510;&#12531;&#12489;&#12521;&#12452;&#12531;&#12452;&#12531;&#12479;&#12501;&#12455;&#12540;&#12473;&#12434;&#27083;&#31689;&#12375;&#12383;&#12290;</p>
+<p>&#20197;&#19978;&#12398;&#12424;&#12358;&#12394;Cortex&#12398;&#35373;&#35336;&#21746;&#23398;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12434;&#26412;&#30058;&#29872;&#22659;&#12391;&#20351;&#12360;&#12427;&#12424;&#12358;&#12395;&#12377;&#12427;&#12383;&#12417;&#12395;&#21462;&#12426;&#32068;&#12416;&#12409;&#12365;&#22810;&#12367;&#12398;&#35506;&#38988;&#12395;&#23550;&#12375;&#12390;&#24540;&#29992;&#12377;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12427;&#12398;&#12384;&#12290;</p>
+<p>&#20363;&#12360;&#12400;&#12289;&#20877;&#29694;&#24615;&#12399;&#27231;&#26800;&#23398;&#32722;&#12384;&#12369;&#12398;&#35506;&#38988;&#12391;&#12399;&#12394;&#12356;&#12290;&#12371;&#12428;&#12399;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#21839;&#38988;&#12391;&#12418;&#12354;&#12427;&#12364;&#12289;&#31169;&#12383;&#12385;&#12399;&#12496;&#12540;&#12472;&#12519;&#12531;&#31649;&#29702;&#12434;&#20351;&#12387;&#12390;&#35299;&#27770;&#12375;&#12390;&#12356;&#12427;&#12290;&#12381;&#12375;&#12390;&#12289;Git&#12398;&#12424;&#12358;&#12394;&#24467;&#26469;&#12398;&#12496;&#12540;&#12472;&#12519;&#12531;&#31649;&#29702;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12399;&#27231;&#26800;&#23398;&#32722;&#12395;&#12399;&#36890;&#29992;&#12375;&#12394;&#12356;&#12364;&#12289;&#12381;&#12398;&#21407;&#21063;&#12434;&#24540;&#29992;&#12377;&#12427;&#12371;&#12392;&#12399;&#12391;&#12365;&#12427;&#12290;DVC (Data Version Control) &#12399;&#12289;Git &#12398;&#12424;&#12358;&#12394;&#12496;&#12540;&#12472;&#12519;&#12531;&#31649;&#29702;&#12434;&#23398;&#32722;&#12487;&#12540;&#12479;&#12289;&#12467;&#12540;&#12489;&#12289;&#12381;&#12375;&#12390;&#12381;&#12398;&#32080;&#26524;&#12392;&#12375;&#12390;&#24471;&#12425;&#12428;&#12427;&#12514;&#12487;&#12523;&#12395;&#24540;&#29992;&#12377;&#12427;&#12371;&#12392;&#12391;&#12289;&#12414;&#12373;&#12395;&#27231;&#26800;&#23398;&#32722;&#12514;&#12487;&#12523;&#12398;&#12496;&#12540;&#12472;&#12519;&#12531;&#31649;&#29702;&#12434;&#23455;&#29694;&#12375;&#12390;&#12356;&#12427;&#65288;&#8251;&#35379;&#35387;8&#65289;&#12290;</p>
+<div id="attachment_226576" style="width: 885px" class="wp-caption aligncenter"><img class="size-full wp-image-226576" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image5.png" alt="" width="875" height="340" data-srcset="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image5.png 875w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image5-150x58.png 150w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image5-300x117.png 300w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image5-768x298.png 768w" data-sizes="(max-width: 875px) 100vw, 875px"/><p class="wp-caption-text">&#30011;&#20687;&#20986;&#20856;&#65306;<a href="https://dvc.org/doc/use-cases/versioning-data-and-model-files" target="_blank" rel="noopener noreferrer">DVC</a></p></div>
+<div class="supplement ">&#65288;&#8251;&#35379;&#35387;8&#65289;DVC&#12398;&#35443;&#32048;&#12399;&#12289;<a href="https://dvc.org/" target="_blank" rel="noopener noreferrer">&#20844;&#24335;&#12469;&#12452;&#12488;</a>&#12434;&#21442;&#29031;&#12398;&#12371;&#12392;&#12290;</div>
+<p>&#12514;&#12487;&#12523;&#12434;&#21021;&#26399;&#21270;&#12375;&#12390;&#20104;&#28204;&#20516;&#12434;&#29983;&#25104;&#12377;&#12427;&#12383;&#12417;&#12395;&#24517;&#35201;&#12394;&#12508;&#12452;&#12521;&#12540;&#12503;&#12524;&#12540;&#12488;&#12420;&#12464;&#12523;&#12540;&#12467;&#12540;&#12489;&#12398;&#12501;&#12449;&#12452;&#12523;&#12399;&#12393;&#12358;&#12377;&#12427;&#12398;&#12363;&#65311;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12391;&#12399;&#12289;&#12371;&#12398;&#12383;&#12417;&#12398;&#12501;&#12524;&#12540;&#12512;&#12527;&#12540;&#12463;&#12434;&#35373;&#35336;&#12377;&#12427;&#12290;</p>
+<p>&#26368;&#24460;&#12395;&#12289;Cortex&#12398;&#35373;&#35336;&#21746;&#23398;&#12399;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#20840;&#33324;&#12391;&#12418;&#35211;&#12425;&#12428;&#12427;&#12424;&#12358;&#12395;&#12394;&#12387;&#12390;&#12365;&#12390;&#12356;&#12427;&#12290;&#20363;&#12360;&#12400;&#12289;Hugging Face&#12398;Transformer&#12521;&#12452;&#12502;&#12521;&#12522;&#12399;&#12289;&#22823;&#37096;&#20998;&#12398;&#19968;&#33324;&#30340;&#12394;transformer&#12514;&#12487;&#12523;&#12398;&#12383;&#12417;&#12395;&#31777;&#21336;&#12394;&#12452;&#12531;&#12479;&#12540;&#12501;&#12455;&#12540;&#12473;&#12434;&#25552;&#20379;&#12375;&#12390;&#12356;&#12427;&#65288;&#8251;&#35379;&#35387;9&#65289;&#12290;</p>
+<div id="attachment_226577" style="width: 514px" class="wp-caption aligncenter"><img class="size-full wp-image-226577" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image6.png" alt="" width="504" height="132" data-srcset="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image6.png 504w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image6-150x39.png 150w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image6-300x79.png 300w" data-sizes="(max-width: 504px) 100vw, 504px"/><p class="wp-caption-text">&#30011;&#20687;&#20986;&#20856;&#65306;<a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer">Hugging Face</a></p></div>
+<div class="supplement ">&#65288;&#8251;&#35379;&#35387;9&#65289;<a href="https://huggingface.co/" target="_blank" rel="noopener noreferrer">Hugging Face</a>&#31038;&#12364;&#25552;&#20379;&#12377;&#12427;Transformer&#12521;&#12452;&#12502;&#12521;&#12522;&#12399;&#12289;<a href="https://github.com/huggingface/transformers" target="_blank" rel="noopener noreferrer">&#12371;&#12385;&#12425;</a>&#12398;GitHub&#12522;&#12509;&#12472;&#12488;&#12522;&#12363;&#12425;&#21033;&#29992;&#12391;&#12365;&#12427;&#12290;</div>
+<p>&#20197;&#19978;&#12398;&#30011;&#20687;&#12395;&#26360;&#12363;&#12428;&#12390;&#12356;&#12427;6&#34892;&#12398;Python&#12467;&#12540;&#12489;&#12434;&#20351;&#12360;&#12400;&#12289;&#26368;&#12418;&#24375;&#21147;&#12394;&#12486;&#12461;&#12473;&#12488;&#29983;&#25104;&#12514;&#12487;&#12523;&#12398;1&#12388;&#12391;&#12354;&#12427;GPT-2&#12363;&#12425;&#20104;&#28204;&#20516;&#12434;&#12480;&#12454;&#12531;&#12525;&#12540;&#12489;&#12375;&#12289;&#21021;&#26399;&#21270;&#12375;&#12289;&#25552;&#20379;&#12377;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12427;&#12290;&#12371;&#12398;&#20107;&#23455;&#12399;&#12289;&#25104;&#29087;&#12375;&#12383;&#36039;&#37329;&#21147;&#12398;&#12354;&#12427;&#12481;&#12540;&#12512;&#12391;&#12373;&#12360;3&#24180;&#21069;&#12395;&#12399;&#12391;&#12365;&#12394;&#12363;&#12387;&#12383;&#12371;&#12392;&#12434;&#12289;6&#34892;&#12398;Python&#12467;&#12540;&#12489;&#12391;&#23455;&#29694;&#12377;&#12427;&#12371;&#12392;&#12364;&#12391;&#12365;&#12427;&#12371;&#12392;&#12434;&#24847;&#21619;&#12377;&#12427;&#12290;</p>
+<p>&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#12456;&#12467;&#12471;&#12473;&#12486;&#12512;&#12395;&#31169;&#12383;&#12385;&#12364;&#21442;&#21152;&#12375;&#12390;&#12356;&#12427;&#12392;&#12356;&#12358;&#20107;&#23455;&#12434;&#36229;&#12360;&#12390;&#12289;&#12371;&#12398;&#12456;&#12467;&#12471;&#12473;&#12486;&#12512;&#12395;&#33288;&#22894;&#12377;&#12427;&#12398;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12395;&#38306;&#12377;&#12427;&#25968;&#21313;&#24180;&#12395;&#12431;&#12383;&#12427;&#30740;&#31350;&#12392;&#12289;&#20154;&#12293;&#12364;&#26085;&#12293;&#30452;&#38754;&#12375;&#12390;&#12356;&#12427;&#21839;&#38988;&#12392;&#12398;&#38291;&#12398;&#26550;&#12369;&#27211;&#12395;&#12394;&#12387;&#12390;&#12356;&#12427;&#12363;&#12425;&#12384;&#12290;&#27231;&#26800;&#23398;&#32722;&#12392;&#29694;&#23455;&#19990;&#30028;&#12398;&#21839;&#38988;&#12434;&#26550;&#27211;&#12377;&#12427;&#12503;&#12525;&#12472;&#12455;&#12463;&#12488;&#12364;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#38556;&#22721;&#12434;&#21462;&#12426;&#38500;&#12367;&#12383;&#12403;&#12395;&#12289;&#26032;&#12375;&#12356;&#12481;&#12540;&#12512;&#12364;&#27231;&#26800;&#23398;&#32722;&#12434;&#20351;&#12387;&#12390;&#21839;&#38988;&#12434;&#35299;&#27770;&#12377;&#12427;&#12398;&#12364;&#12424;&#12426;&#31777;&#21336;&#12395;&#12394;&#12427;&#12398;&#12384;&#12290;</p>
+<p>&#23558;&#26469;&#30340;&#12395;&#12399;&#12289;&#27231;&#26800;&#23398;&#32722;&#12399;&#12377;&#12409;&#12390;&#12398;&#12456;&#12531;&#12472;&#12491;&#12450;&#12398;&#12473;&#12479;&#12483;&#12463;&#12398;&#19968;&#37096;&#12395;&#12394;&#12427;&#12384;&#12429;&#12358;&#12290;&#27231;&#26800;&#23398;&#32722;&#12364;&#35302;&#12428;&#12394;&#12356;&#21839;&#38988;&#12399;&#12411;&#12392;&#12435;&#12393;&#12394;&#12367;&#12394;&#12427;&#12384;&#12429;&#12358;&#12290;&#27231;&#26800;&#23398;&#32722;&#12364;&#12477;&#12501;&#12488;&#12454;&#12455;&#12450;&#12456;&#12531;&#12472;&#12491;&#12450;&#12395;&#12392;&#12387;&#12390;&#24403;&#12383;&#12426;&#21069;&#12392;&#12394;&#12427;&#12414;&#12391;&#12398;&#12506;&#12540;&#12473;&#12399;&#12289;Cortex&#12398;&#12424;&#12358;&#12394;&#12503;&#12521;&#12483;&#12488;&#12501;&#12457;&#12540;&#12512;&#12434;&#12393;&#12428;&#12384;&#12369;&#26089;&#12367;&#38283;&#30330;&#12375;&#12289;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#26222;&#21450;&#12434;&#21152;&#36895;&#12391;&#12365;&#12427;&#12363;&#12395;&#12363;&#12363;&#12387;&#12390;&#12356;&#12427;&#12290;</p>
+<p>&#12418;&#12375;&#27231;&#26800;&#23398;&#32722;&#12456;&#12531;&#12472;&#12491;&#12450;&#12522;&#12531;&#12464;&#12398;&#26222;&#21450;&#12364;&#12354;&#12394;&#12383;&#12395;&#12392;&#12387;&#12390;&#12418;&#21050;&#28608;&#30340;&#12391;&#12354;&#12428;&#12400;&#12289;<a href="https://github.com/cortexlabs" target="_blank" rel="noopener noreferrer">&#31169;&#12383;&#12385;&#12399;&#24120;&#12395;&#26032;&#12375;&#12356;&#12467;&#12531;&#12488;&#12522;&#12499;&#12517;&#12540;&#12479;&#12540;&#12434;&#27475;&#36814;&#12375;&#12390;&#12356;&#12414;&#12377;&#12290;</a></p>
+<hr><p>&#21407;&#25991;<br>
+&#12302;Moving from data science to machine learning engineering&#12303;</p>
+<div class="linkcard"><div class="lkc-external-wrap"><a class="lkc-link no_icon" href="https://towardsdatascience.com/moving-from-data-science-to-machine-learning-engineering-68916173eaf3" target="_blank"><div class="lkc-card"><div class="lkc-info"><span class="lkc-domain"><img class="lkc-favicon" src="https://www.google.com/s2/favicons?domain=towardsdatascience.com" alt="" width="16" height="16"/>&nbsp;Medium</span></div><div class="lkc-content"><span class="lkc-thumbnail"><img class="lkc-thumbnail-img" src="https://ainow.ai/wp-content/uploads/pz-linkcard/cache/3eadb58b5225b3ec3297bd955ef67cac989436fa3fb5af12b863702a8a748e73" alt=""/></span><div class="lkc-title"><span class="lkc-title-text">Moving from data science to machine learning engineering</span></div><div class="lkc-url"><cite>https://towardsdatascience.com/moving-from-data-science-to-machine-learning-engineering-68916173eaf3</cite></div><div class="lkc-excerpt">The world of machine learning&#8202;&mdash;&#8202;and software&#8202;&mdash;&#8202;is changing</div></div><div class="clear"></div></div></a></div></div>
+<p>&#33879;&#32773;<br>
+Caleb Kaiser</p>
+<p>&#32763;&#35379;<br>
+&#21513;&#26412;&#24184;&#35352;&#65288;&#12501;&#12522;&#12540;&#12521;&#12452;&#12479;&#12540;&#12289;JDLA Deep Learning for GENERAL 2019 #1&#21462;&#24471;&#65289;</p>
+<p>&#32232;&#38598;<br>
+&#12362;&#12374;&#12369;&#12435;</p>  </div>
+
+      <div id="addbanner-contentfoot">
+    <div id="text-34" class="widget widget_text">			<div class="textwidget"><a href="https://form.run/@ainowmagazine3" target="_blank"><img src="https://ainow.ai/wp-content/uploads/2017/05/20170529_738_01.png"></a></div>
+		</div>  </div>
+    <div class="button-area">
+  <ul>
+    <!--Twitter-->
+    <li class="twitter">
+      <a href="https://twitter.com/intent/tweet?text=%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%8B%E3%82%89%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C&amp;url=https%3A%2F%2Fainow.ai%2F2020%2F08%2F28%2F226567%2F"
+      target="_blank" title="Twitterで共有">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <!--FaceBook-->
+    <li class="facebook">
+      <a href="https://www.facebook.com/sharer.php?src=bm&u=https%3A%2F%2Fainow.ai%2F2020%2F08%2F28%2F226567%2F&t=%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%8B%E3%82%89%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C"
+      target="_blank" title="Facebookで共有">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <!--はてなブックマーク-->
+    <li class="hatena">
+      <a href="https://b.hatena.ne.jp/add?mode=confirm&amp;url=https%3A%2F%2Fainow.ai%2F2020%2F08%2F28%2F226567%2F&amp;title=%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%81%8B%E3%82%89%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C"
+      target="_blank" title="はてなブックマークに追加">
+        <i class="fa fa-hatena"></i>
+      </a>
+    </li>
+    <!--Poket-->
+    <li class="rss">
+      <a href="https://feedly.com/i/subscription/feed%2Fhttp%3A%2F%2Fainow.ai%2Ffeed%2F"
+      target="_blank" title="RSS購読">
+        <i class="fas fa-rss"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+  <div class="article_area_data">
+    </div>
+
+
+<!-- コメント機能タグ -->
+<div id="ulCommentWidget" style="clear:both;"></div>
+<script>
+var _ul_comment_config = _ul_comment_config||{};
+_ul_comment_config['id'] = 'CM-5i3ih5ry';
+_ul_comment_config['article_id'] = '226567';
+_ul_comment_config['published_at'] = '';
+_ul_comment_config['number_of_comments'] = 5;
+_ul_comment_config['use_pagination'] = true;
+
+(function (c, n, s) {if (c[n] === void 0) {c['ULObject'] = n;
+c[n] = c[n] || function () {(c[n].q = c[n].q || []).push(arguments)};
+c[n].l = 1 * new Date();var e = document.createElement('script');e.async = 1;
+e.src = s + "/comment.js";var t = document.getElementsByTagName('script')[0];
+t.parentNode.insertBefore(e, t);}})
+(window, 'ul_comment_widget', 'https://cm-widget.nakanohito.jp/cm');
+ul_comment_widget('init', _ul_comment_config);
+</script>
+<!-- コメント機能タグ -->
+
+
+<div class="btn-wrap">
+  <a href="/">トップへ</a>
+</div>
+
+<div class="cta-wrap">
+
+<div id="wpp-7" class="ctawidget popular-posts">
+人気の記事（週間）
+<!-- WordPress Popular Posts -->
+
+<ul class="wpp-list wpp-list-with-thumbnails">
+<li>
+<a href="https://ainow.ai/2020/08/27/226774/" title="ほぼすべての機械学習プロジェクトのためのタスクチートシート" target="_self"><img width="728" height="533" src="https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1.jpg" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1.jpg 1250w, https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1-150x110.jpg 150w, https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1-300x220.jpg 300w, https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1-768x562.jpg 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a href="https://ainow.ai/2020/08/27/226774/" title="ほぼすべての機械学習プロジェクトのためのタスクチートシート" class="wpp-post-title" target="_self">ほぼすべての機械学習プロジェクトのためのタスクチートシート</a>
+</li>
+<li class="current">
+<a  title="データサイエンスから機械学習エンジニアリングへの移行" target="_self"><img width="728" height="311" src="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3.png" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3.png 875w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3-150x64.png 150w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3-300x128.png 300w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3-768x328.png 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a  title="データサイエンスから機械学習エンジニアリングへの移行" class="wpp-post-title" target="_self">データサイエンスから機械学習エンジニアリングへの移行</a>
+</li>
+<li>
+<a href="https://ainow.ai/2020/02/01/182693/" title="AIによるメリット・デメリットは？人工知能の問題点と解決策も紹介" target="_self"><img width="728" height="382" src="https://ainow.ai/wp-content/uploads/2020/01/b99835a7c70f471ab887b0e007ad8a05-1920x1008.png" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/01/b99835a7c70f471ab887b0e007ad8a05-1920x1008.png 1920w, https://ainow.ai/wp-content/uploads/2020/01/b99835a7c70f471ab887b0e007ad8a05-150x79.png 150w, https://ainow.ai/wp-content/uploads/2020/01/b99835a7c70f471ab887b0e007ad8a05-300x158.png 300w, https://ainow.ai/wp-content/uploads/2020/01/b99835a7c70f471ab887b0e007ad8a05-768x403.png 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a href="https://ainow.ai/2020/02/01/182693/" title="AIによるメリット・デメリットは？人工知能の問題点と解決策も紹介" class="wpp-post-title" target="_self">AIによるメリット・デメリットは？人工知能の問題点と解決策も紹介</a>
+</li>
+<li>
+<a href="https://ainow.ai/2019/11/26/180809/" title="機械学習をどこよりもわかりやすく解説！　教師ありなし学習・強化学習だけでなく5つのアルゴリズムも完全理解！" target="_self"><img width="728" height="382" src="https://ainow.ai/wp-content/uploads/2019/11/a315aff0942ff8e9549dba594485535c-1.png" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2019/11/a315aff0942ff8e9549dba594485535c-1.png 1200w, https://ainow.ai/wp-content/uploads/2019/11/a315aff0942ff8e9549dba594485535c-1-150x79.png 150w, https://ainow.ai/wp-content/uploads/2019/11/a315aff0942ff8e9549dba594485535c-1-300x158.png 300w, https://ainow.ai/wp-content/uploads/2019/11/a315aff0942ff8e9549dba594485535c-1-768x403.png 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a href="https://ainow.ai/2019/11/26/180809/" title="機械学習をどこよりもわかりやすく解説！　教師ありなし学習・強化学習だけでなく5つのアルゴリズムも完全理解！" class="wpp-post-title" target="_self">機械学習をどこよりもわかりやすく解説！　教師ありなし学習・強化学習だけでなく5つのアルゴリズムも完全理解！</a>
+</li>
+<li>
+<a href="https://ainow.ai/2020/03/02/183280/" title="【保存版】オープンデータ・データセット100選  -膨大なデータを活用しよう！" target="_self"><img width="728" height="382" src="https://ainow.ai/wp-content/uploads/2020/02/a11b4bb3ba448d1fa402ac3dc62cc91f.png" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/02/a11b4bb3ba448d1fa402ac3dc62cc91f.png 1201w, https://ainow.ai/wp-content/uploads/2020/02/a11b4bb3ba448d1fa402ac3dc62cc91f-150x79.png 150w, https://ainow.ai/wp-content/uploads/2020/02/a11b4bb3ba448d1fa402ac3dc62cc91f-300x157.png 300w, https://ainow.ai/wp-content/uploads/2020/02/a11b4bb3ba448d1fa402ac3dc62cc91f-768x403.png 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a href="https://ainow.ai/2020/03/02/183280/" title="【保存版】オープンデータ・データセット100選  -膨大なデータを活用しよう！" class="wpp-post-title" target="_self">【保存版】オープンデータ・データセット100選  -膨大なデータを活用しよう！</a>
+</li>
+<li>
+<a href="https://ainow.ai/2018/11/14/151000/" title="１番構ってくれるLINEチャットボットはどれ！？ 実際にチャットボットに甘えてみた！" target="_self"><img width="728" height="382" src="https://ainow.ai/wp-content/uploads/2018/11/ae46b1f460ee46f789c27b264a6cb421-1-1920x1008.jpg" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2018/11/ae46b1f460ee46f789c27b264a6cb421-1-1920x1008.jpg 1920w, https://ainow.ai/wp-content/uploads/2018/11/ae46b1f460ee46f789c27b264a6cb421-1-150x79.jpg 150w, https://ainow.ai/wp-content/uploads/2018/11/ae46b1f460ee46f789c27b264a6cb421-1-300x158.jpg 300w, https://ainow.ai/wp-content/uploads/2018/11/ae46b1f460ee46f789c27b264a6cb421-1-768x403.jpg 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a href="https://ainow.ai/2018/11/14/151000/" title="１番構ってくれるLINEチャットボットはどれ！？ 実際にチャットボットに甘えてみた！" class="wpp-post-title" target="_self">１番構ってくれるLINEチャットボットはどれ！？ 実際にチャットボットに甘えてみた！</a>
+</li>
+</ul>
+
+</div>
+<div id="text-5" class="ctawidget widget_text">			<div class="textwidget"><div class="formrun-box">
+  <div class="formrun-title">
+    <img src="https://ainow.ai/wp-content/themes/ainow/img/sp_logo.png" alt="">
+    <h2>無料メールマガジン登録</h3>
+    <p>週1回、注目のAIニュースやイベント情報を<br>
+    編集部がピックアップしてお届けしています。
+    </p>
+  </div>
+<div class="formrun-form">
+<form class="formrun" action="https://form.run/api/v1/r/Y2sXjU7HkmAvYx9dfwFs" method="post" target="_blank">
+<div class="formrun-content">
+<label>お名前</label>
+<input name="_field_2" type="text" data-formrun-type="name" data-formrun-required></div>
+<div class="formrun-content">
+<label>メールアドレス</label>
+<input name="_field_1" type="text" data-formrun-type="email" data-formrun-required>
+</div>
+<div class="formrun-content">
+<label>職業<span>任意</span></label>
+<select class="form-control" name="_field_6" data-formrun-class-if-error="form-control-danger" data-formrun-class-if-success="form-control-success" class="form-control"><option value="">選択してください</option>
+<option>
+      会社員
+    </option><option>
+      会社役員
+    </option><option>
+      公務員
+    </option><option>
+      自営業
+    </option><option>
+      主夫/主婦
+    </option><option>
+      アルバイト
+    </option><option>
+      学生
+    </option><option>
+      その他
+    </option>
+</select>
+</div>
+<div class="formrun-content">
+<label>職種<span>任意</span></label>
+<select class="form-control" name="_field_3" data-formrun-class-if-error="form-control-danger" data-formrun-class-if-success="form-control-success" class="form-control"><option value="">選択してください</option>
+    <option>Webエンジニア</option>
+    <option>モバイルエンジニア</option>
+    <option>インフラエンジニア</option>
+    <option>その他エンジニア</option>
+    <option>データアナリスト/データサイエンティスト
+    </option><option>UI/UXデザイナー
+    </option><option>グラフィックデザイナー
+    </option><option>その他デザイナー
+    </option><option>ディレクター
+    </option><option>セールス
+    </option><option>マーケティング
+    </option><option>ライター
+    </option><option>プランナー
+    </option><option>その他の職種
+    </option>
+</select>
+</div>
+<div class="formrun-content">
+<p>​
+<a href="https://ainow.ai/%E3%80%90%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E3%81%AE%E5%8F%96%E6%89%B1%E3%81%84%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%91/" target="blank">こちら</a>の規約にご同意のうえチェックしてください。</p>
+<div class="formrun-check-content">
+  <span>規約に同意する<input name="_field_4" type="checkbox" data-formrun-required></span>
+</div>
+<div class="formrun-button-content">
+  <button class="formrun-submit-button" type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信完了✓">同意して送信する</button></p>
+</div>
+</div>
+</form>​
+</div>
+</div>
+<style>
+.formrun-box{
+  background: #FFF;
+  padding: 20px;
+  font-size: 0;
+  box-shadow: 0 10px 50px 0 rgba(22,22,22,0.1);
+}
+.formrun-title {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: left;
+  padding: 100px 20px 0;
+}
+.formrun-title img {
+  width: 80%;
+}
+.formrun-title h2 {
+  font-size: 22px;
+  padding: 30px 0 0;
+}
+.formrun-title p {
+  font-size: 12px;
+  padding: 20px 0 0;
+}
+.formrun-form {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+.formrun-content {
+  text-align: left;
+  margin: 14px auto;
+  max-width: 320px;
+}
+.formrun-content label {
+  font-size: 14px;
+  font-weight: bold;
+}
+.formrun-content label span {
+  font-size: 10px;
+  color: #999;
+  margin-left: 6px;
+}
+.formrun-content input {
+  font-size: 14px;
+  height: 34px;
+  background: #ECECEC;
+  border: none;
+  width: 100%;
+}
+.formrun-content select {
+  font-size: 14px;
+  height: 34px;
+  background: #ECECEC;
+  border: none;
+  width: 100%;
+}
+.formrun-content p {
+  font-size: 12px;
+  margin: 0 10px;
+}
+.formrun-check-content {
+  margin: 10px;
+  text-align: center;
+}
+.formrun-check-content span {
+  font-size: 12px;
+}
+.formrun-check-content span input {
+  height: auto;
+  width: auto;
+  border: 2px solid #222;
+  margin: 4px;
+}
+.formrun-button-content {
+  text-align: center;
+  margin-top: 14px 0;
+}
+.formrun-submit-button {
+  background: #5985C1;
+  font-size: 14px;
+  color: #FFF;
+  width: 80%;
+}
+@media (max-width: 700px) {
+  .formrun-box {
+    padding: 30px 20px;
+  }
+  .formrun-title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px;
+  }
+  .formrun-title img {
+    width: 60%;
+  }
+  .formrun-form {
+    display: inline-block;
+    width: 100%;
+  }
+}
+</style></div>
+		</div></div>
+
+  </div>
+    <div id="sidebar">
+  
+<div id="wpp-2" class="widget popular-posts">
+<h4 class="widgettitle"><span>週間PVランキング</span></h4>
+<!-- WordPress Popular Posts -->
+
+<ul class="wpp-list wpp-list-with-thumbnails">
+<li>
+<a href="https://ainow.ai/2020/08/27/226774/" title="ほぼすべての機械学習プロジェクトのためのタスクチートシート" target="_self"><img width="728" height="533" src="https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1.jpg" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1.jpg 1250w, https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1-150x110.jpg 150w, https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1-300x220.jpg 300w, https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1-768x562.jpg 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a href="https://ainow.ai/2020/08/27/226774/" title="ほぼすべての機械学習プロジェクトのためのタスクチートシート" class="wpp-post-title" target="_self">ほぼすべての機械学習プロジェクトのためのタスクチートシート</a>
+</li>
+<li>
+<a href="https://ainow.ai/artificial-intelligence-3/" title="今さら聞けない「AI・人工知能」とは？" target="_self"><img width="728" height="382" src="https://ainow.ai/wp-content/uploads/2020/05/ainow-1920x1008.png" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/05/ainow-1920x1008.png 1920w, https://ainow.ai/wp-content/uploads/2020/05/ainow-150x79.png 150w, https://ainow.ai/wp-content/uploads/2020/05/ainow-300x158.png 300w, https://ainow.ai/wp-content/uploads/2020/05/ainow-768x403.png 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a href="https://ainow.ai/artificial-intelligence-3/" title="今さら聞けない「AI・人工知能」とは？" class="wpp-post-title" target="_self">今さら聞けない「AI・人工知能」とは？</a>
+</li>
+<li class="current">
+<a  title="データサイエンスから機械学習エンジニアリングへの移行" target="_self"><img width="728" height="311" src="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3.png" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3.png 875w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3-150x64.png 150w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3-300x128.png 300w, https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3-768x328.png 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a  title="データサイエンスから機械学習エンジニアリングへの移行" class="wpp-post-title" target="_self">データサイエンスから機械学習エンジニアリングへの移行</a>
+</li>
+<li>
+<a href="https://ainow.ai/2020/02/01/182693/" title="AIによるメリット・デメリットは？人工知能の問題点と解決策も紹介" target="_self"><img width="728" height="382" src="https://ainow.ai/wp-content/uploads/2020/01/b99835a7c70f471ab887b0e007ad8a05-1920x1008.png" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/01/b99835a7c70f471ab887b0e007ad8a05-1920x1008.png 1920w, https://ainow.ai/wp-content/uploads/2020/01/b99835a7c70f471ab887b0e007ad8a05-150x79.png 150w, https://ainow.ai/wp-content/uploads/2020/01/b99835a7c70f471ab887b0e007ad8a05-300x158.png 300w, https://ainow.ai/wp-content/uploads/2020/01/b99835a7c70f471ab887b0e007ad8a05-768x403.png 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a href="https://ainow.ai/2020/02/01/182693/" title="AIによるメリット・デメリットは？人工知能の問題点と解決策も紹介" class="wpp-post-title" target="_self">AIによるメリット・デメリットは？人工知能の問題点と解決策も紹介</a>
+</li>
+<li>
+<a href="https://ainow.ai/2019/11/26/180809/" title="機械学習をどこよりもわかりやすく解説！　教師ありなし学習・強化学習だけでなく5つのアルゴリズムも完全理解！" target="_self"><img width="728" height="382" src="https://ainow.ai/wp-content/uploads/2019/11/a315aff0942ff8e9549dba594485535c-1.png" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2019/11/a315aff0942ff8e9549dba594485535c-1.png 1200w, https://ainow.ai/wp-content/uploads/2019/11/a315aff0942ff8e9549dba594485535c-1-150x79.png 150w, https://ainow.ai/wp-content/uploads/2019/11/a315aff0942ff8e9549dba594485535c-1-300x158.png 300w, https://ainow.ai/wp-content/uploads/2019/11/a315aff0942ff8e9549dba594485535c-1-768x403.png 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a href="https://ainow.ai/2019/11/26/180809/" title="機械学習をどこよりもわかりやすく解説！　教師ありなし学習・強化学習だけでなく5つのアルゴリズムも完全理解！" class="wpp-post-title" target="_self">機械学習をどこよりもわかりやすく解説！　教師ありなし学習・強化学習だけでなく5つのアルゴリズムも完全理解！</a>
+</li>
+<li>
+<a href="https://ainow.ai/2020/03/02/183280/" title="【保存版】オープンデータ・データセット100選  -膨大なデータを活用しよう！" target="_self"><img width="728" height="382" src="https://ainow.ai/wp-content/uploads/2020/02/a11b4bb3ba448d1fa402ac3dc62cc91f.png" class="wpp-thumbnail wpp_featured_stock wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/02/a11b4bb3ba448d1fa402ac3dc62cc91f.png 1201w, https://ainow.ai/wp-content/uploads/2020/02/a11b4bb3ba448d1fa402ac3dc62cc91f-150x79.png 150w, https://ainow.ai/wp-content/uploads/2020/02/a11b4bb3ba448d1fa402ac3dc62cc91f-300x157.png 300w, https://ainow.ai/wp-content/uploads/2020/02/a11b4bb3ba448d1fa402ac3dc62cc91f-768x403.png 768w" sizes="(max-width: 728px) 100vw, 728px" /></a>
+<a href="https://ainow.ai/2020/03/02/183280/" title="【保存版】オープンデータ・データセット100選  -膨大なデータを活用しよう！" class="wpp-post-title" target="_self">【保存版】オープンデータ・データセット100選  -膨大なデータを活用しよう！</a>
+</li>
+</ul>
+
+</div>
+<div id="text-27" class="widget widget_text"><h4 class="widgettitle"><span>YouTubeチャンネル 最新動画</span></h4>			<div class="textwidget"><a href="https://youtu.be/qgLQedsBz2s" target="_blank" rel="noopener noreferrer"><img src="https://ainow.ai/wp-content/uploads/2020/08/thumbnail30_TI.png"></a></div>
+		</div><div id="text-23" class="widget widget_text"><h4 class="widgettitle"><span>メディアパートナー</span></h4>			<div class="textwidget"><a href="https://ainow.ai/jdla"><img src="https://ainow.ai/wp-content/uploads/2018/01/d28865-1-785862-3.jpg"></a>
+
+<a href="https://abejainc.com/seminar/ja/retail" target="_blank"><img src="https://ainow.ai/wp-content/uploads/2020/01/83907809_161543638472710_6217277563996209152_n.jpg"></a></div>
+		</div><div id="text-25" class="widget widget_text"><h4 class="widgettitle"><span>おすすめコンテンツ</span></h4>			<div class="textwidget"><p><a href = "https://ainow.ai/2019/08/21/174501/?cid=sb_os_01" target="_blank"> <img src="https://ainow.ai/wp-content/uploads/2019/08/c5dce581a98a7f7be89b72ad2bb3c5b2.png"></a></p>
+<p><a href = "https://ainow.ai/2019/10/25/179796/?cid=sb_os_02" target="_blank"> <img src="https://ainow.ai/wp-content/uploads/2019/10/14014fa6d3ff8c6fec536454f237f119.png"></a></p>
+<p><a href = "https://ainow.ai/2019/11/08/180544/?cid=sb_os_03" target="_blank"> <img src="https://ainow.ai/wp-content/uploads/2019/11/a11b4bb3ba448d1fa402ac3dc62cc91f.png"></a></p>
+</div>
+		</div><div id="text-19" class="widget widget_text">			<div class="textwidget"><a href = "https://form.run/@ainowmagazine3?cid=test01" target="_blank"> <img src="https://ainow.ai/wp-content/uploads/2017/03/ainow_magazine_840x560_02a.png"
+ onload="ga('send','event','表示','PC右カラムバナー表示','毎日ニュース確認_表示',1);"></a>
+
+</div>
+		</div></div>
+  <div id="recommend_article_area">
+    <h1>あなたにおすすめの記事</h1>
+              <article class="recommend_article">
+        <div class="recommend_article_thum">
+        <img width="572" height="300" src="https://ainow.ai/wp-content/uploads/2020/08/552eb4aed1593e952e7a12c7b8a0e9e1-572x300.png" class="attachment-home-thum size-home-thum wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/08/552eb4aed1593e952e7a12c7b8a0e9e1-572x300.png 572w, https://ainow.ai/wp-content/uploads/2020/08/552eb4aed1593e952e7a12c7b8a0e9e1-150x79.png 150w, https://ainow.ai/wp-content/uploads/2020/08/552eb4aed1593e952e7a12c7b8a0e9e1-300x158.png 300w, https://ainow.ai/wp-content/uploads/2020/08/552eb4aed1593e952e7a12c7b8a0e9e1-768x403.png 768w, https://ainow.ai/wp-content/uploads/2020/08/552eb4aed1593e952e7a12c7b8a0e9e1.png 1200w" sizes="(max-width: 572px) 100vw, 572px" />      </div>
+          <h2>オンライン服薬指導支援サービス「AI薬師」が提供開始 &#8211; 導入からサポートまでを一貫して提供</h2>
+                    <span class="article_date">2020.08.28</span>
+        <a class="article_link" href="https://ainow.ai/2020/08/28/227670/"></a>
+      </article>
+          <article class="recommend_article">
+        <div class="recommend_article_thum">
+        <img width="572" height="300" src="https://ainow.ai/wp-content/uploads/2020/08/fb26130a5382a66f74f438c209f07f22-572x300.png" class="attachment-home-thum size-home-thum wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/08/fb26130a5382a66f74f438c209f07f22-572x300.png 572w, https://ainow.ai/wp-content/uploads/2020/08/fb26130a5382a66f74f438c209f07f22-150x79.png 150w, https://ainow.ai/wp-content/uploads/2020/08/fb26130a5382a66f74f438c209f07f22-300x158.png 300w, https://ainow.ai/wp-content/uploads/2020/08/fb26130a5382a66f74f438c209f07f22-768x403.png 768w, https://ainow.ai/wp-content/uploads/2020/08/fb26130a5382a66f74f438c209f07f22.png 1200w" sizes="(max-width: 572px) 100vw, 572px" />      </div>
+          <h2>業界初のAI電話予約応対サービス「AI レセプション」が10月にリリース ー24時間365日電話予約可能に！</h2>
+          <span class="article_tag"><a href="/tag/pickup2">#pickup2</a></span>          <span class="article_date">2020.08.28</span>
+        <a class="article_link" href="https://ainow.ai/2020/08/28/227646/"></a>
+      </article>
+          <article class="recommend_article">
+        <div class="recommend_article_thum">
+        <img width="572" height="300" src="https://ainow.ai/wp-content/uploads/2020/08/ae46b1f460ee46f789c27b264a6cb421-3-1-572x300.jpg" class="attachment-home-thum size-home-thum wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/08/ae46b1f460ee46f789c27b264a6cb421-3-1-572x300.jpg 572w, https://ainow.ai/wp-content/uploads/2020/08/ae46b1f460ee46f789c27b264a6cb421-3-1-150x79.jpg 150w, https://ainow.ai/wp-content/uploads/2020/08/ae46b1f460ee46f789c27b264a6cb421-3-1-300x158.jpg 300w, https://ainow.ai/wp-content/uploads/2020/08/ae46b1f460ee46f789c27b264a6cb421-3-1-768x403.jpg 768w, https://ainow.ai/wp-content/uploads/2020/08/ae46b1f460ee46f789c27b264a6cb421-3-1.jpg 1200w" sizes="(max-width: 572px) 100vw, 572px" />      </div>
+          <h2>耳の遠い人との会話が快適になるAIボイス筆談機「ポケトーク mimi」が取扱い開始-音声をリアルタイムで文字に変換</h2>
+                    <span class="article_date">2020.08.28</span>
+        <a class="article_link" href="https://ainow.ai/2020/08/28/227636/"></a>
+      </article>
+          <article class="recommend_article">
+        <div class="recommend_article_thum">
+        <img width="572" height="300" src="https://ainow.ai/wp-content/uploads/2020/07/TranslationArticle-Aug2020-MLEngineering-image3-572x300.png" class="attachment-home-thum size-home-thum wp-post-image" alt="" />      </div>
+          <h2>データサイエンスから機械学習エンジニアリングへの移行</h2>
+                    <span class="article_date">2020.08.28</span>
+        <a class="article_link" href="https://ainow.ai/2020/08/28/226567/"></a>
+      </article>
+          <article class="recommend_article">
+        <div class="recommend_article_thum">
+        <img width="572" height="300" src="https://ainow.ai/wp-content/uploads/2020/08/TranslationArticle-Aug2020-CheckList-image1-572x300.jpg" class="attachment-home-thum size-home-thum wp-post-image" alt="" />      </div>
+          <h2>ほぼすべての機械学習プロジェクトのためのタスクチートシート</h2>
+                    <span class="article_date">2020.08.27</span>
+        <a class="article_link" href="https://ainow.ai/2020/08/27/226774/"></a>
+      </article>
+          <article class="recommend_article">
+        <div class="recommend_article_thum">
+        <img width="572" height="300" src="https://ainow.ai/wp-content/uploads/2020/08/LL_img_222906_1-572x300.jpg" class="attachment-home-thum size-home-thum wp-post-image" alt="" />      </div>
+          <h2>チャットボットのキャラクター利用率は約5割  ー利用率や社内認知向上に寄与することが判明</h2>
+          <span class="article_tag"><a href="/tag/pickup2">#pickup2</a></span>          <span class="article_date">2020.08.26</span>
+        <a class="article_link" href="https://ainow.ai/2020/08/26/227598/"></a>
+      </article>
+          <article class="recommend_article">
+        <div class="recommend_article_thum">
+        <img width="572" height="300" src="https://ainow.ai/wp-content/uploads/2020/08/eb50698bfde81d02629bbd02850abecc-572x300.png" class="attachment-home-thum size-home-thum wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/08/eb50698bfde81d02629bbd02850abecc-572x300.png 572w, https://ainow.ai/wp-content/uploads/2020/08/eb50698bfde81d02629bbd02850abecc-150x79.png 150w, https://ainow.ai/wp-content/uploads/2020/08/eb50698bfde81d02629bbd02850abecc-300x158.png 300w, https://ainow.ai/wp-content/uploads/2020/08/eb50698bfde81d02629bbd02850abecc-768x403.png 768w, https://ainow.ai/wp-content/uploads/2020/08/eb50698bfde81d02629bbd02850abecc.png 1200w" sizes="(max-width: 572px) 100vw, 572px" />      </div>
+          <h2>データを軸としてAIやソフト開発を行うアイディオットが資金調達を実施 &#8211; 業界のDX化を促進</h2>
+          <span class="article_tag"><a href="/tag/pickup2">#pickup2</a></span>          <span class="article_date">2020.08.26</span>
+        <a class="article_link" href="https://ainow.ai/2020/08/26/227581/"></a>
+      </article>
+          <article class="recommend_article">
+        <div class="recommend_article_thum">
+        <img width="572" height="300" src="https://ainow.ai/wp-content/uploads/2020/08/8089e50294910c6cb163e5cb54ad137b-1-572x300.jpg" class="attachment-home-thum size-home-thum wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/08/8089e50294910c6cb163e5cb54ad137b-1-572x300.jpg 572w, https://ainow.ai/wp-content/uploads/2020/08/8089e50294910c6cb163e5cb54ad137b-1-150x79.jpg 150w, https://ainow.ai/wp-content/uploads/2020/08/8089e50294910c6cb163e5cb54ad137b-1-300x158.jpg 300w, https://ainow.ai/wp-content/uploads/2020/08/8089e50294910c6cb163e5cb54ad137b-1-768x403.jpg 768w, https://ainow.ai/wp-content/uploads/2020/08/8089e50294910c6cb163e5cb54ad137b-1.jpg 1200w" sizes="(max-width: 572px) 100vw, 572px" />      </div>
+          <h2>ゴッホ、モネなどの有名画家の作風絵画を生み出すAI「Enpainter」がリリース</h2>
+          <span class="article_tag"><a href="/tag/pickup2">#pickup2</a></span>          <span class="article_date">2020.08.26</span>
+        <a class="article_link" href="https://ainow.ai/2020/08/26/227573/"></a>
+      </article>
+          <article class="recommend_article">
+        <div class="recommend_article_thum">
+        <img width="486" height="290" src="https://ainow.ai/wp-content/uploads/2019/07/popular_tweet-486x290.png" class="attachment-home-thum size-home-thum wp-post-image" alt="" />      </div>
+          <h2>先週のAI関連人気ツイートTOP20！【2020/08/24更新】</h2>
+          <span class="article_tag"><a href="/tag/pickup2">#pickup2</a></span>          <span class="article_date">2020.08.25</span>
+        <a class="article_link" href="https://ainow.ai/2020/08/25/227471/"></a>
+      </article>
+          <article class="recommend_article">
+        <div class="recommend_article_thum">
+        <img width="572" height="300" src="https://ainow.ai/wp-content/uploads/2020/08/unnamed-3-572x300.png" class="attachment-home-thum size-home-thum wp-post-image" alt="" srcset="https://ainow.ai/wp-content/uploads/2020/08/unnamed-3-572x300.png 572w, https://ainow.ai/wp-content/uploads/2020/08/unnamed-3-150x79.png 150w, https://ainow.ai/wp-content/uploads/2020/08/unnamed-3-300x158.png 300w, https://ainow.ai/wp-content/uploads/2020/08/unnamed-3.png 714w" sizes="(max-width: 572px) 100vw, 572px" />      </div>
+          <h2>FRONTEOが10月27日にオンラインカンファレンスを開催 ー東大 大澤氏、鳥海氏が登壇</h2>
+                    <span class="article_date">2020.08.24</span>
+        <a class="article_link" href="https://ainow.ai/2020/08/24/227514/"></a>
+      </article>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript">
+  </script>
+  <!-- //contents -->
+</div>
+<!-- //wrapper -->
+<footer>
+  <div class="footer_wrapper">
+  <div class="footer_contents">
+    <div class="footer_logo">
+      <a href="/"><img src="https://ainow.ai/wp-content/themes/ainow/img/footer_logo.png" alt=""></a>
+    </div>
+    <ul>
+      <li><a href="https://twitter.com/AINOW_ai"><img class="footer_sns" src="https://ainow.ai/wp-content/themes/ainow/img/tw.png" alt=""></a></li>
+      <li><a href="https://www.facebook.com/dipainow/"><img class="footer_sns" src="https://ainow.ai/wp-content/themes/ainow/img/fb.png" alt=""></a></li>
+      <li><a class="footer_mail" href="https://form.run/@ainowmagazine3?cid=test01">メルマガ配信中  AIトレンドを見逃すな ▶︎ </a></li>
+    </ul>
+  </div>
+  <div id="footer_menu">
+    <ul id="menu-%e3%83%95%e3%83%83%e3%82%bf%e3%83%bc%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu"><li id="menu-item-2108" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2108"><a href="http://www.dip-net.co.jp/">会社概要</a></li>
+<li id="menu-item-170012" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-170012"><a href="https://www.wantedly.com/projects/186205">採用情報</a></li>
+<li id="menu-item-170013" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-170013"><a href="https://form.run/@ainow-contact">お問い合わせ</a></li>
+<li id="menu-item-2111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2111"><a href="https://ainow.ai/intellectual-property-right/">知的財産権に関する考え方</a></li>
+<li id="menu-item-105750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-105750"><a href="http://startuptimes.jp/">スタートアップタイムズ</a></li>
+</ul>      <span>©Copyright2020  AI専門ニュースメディア AINOW.All Rights Reserved.</span>
+  </div>
+</div>
+</footer>
+<script type="text/javascript">
+  $('a[target="_self"]').removeAttr('target');
+</script>
+</body>
+<style type="text/css">.saboxplugin-wrap{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;border:1px solid #eee;width:100%;clear:both;display:block;overflow:hidden;word-wrap:break-word;position:relative}.saboxplugin-wrap .saboxplugin-gravatar{float:left;padding:20px}.saboxplugin-wrap .saboxplugin-gravatar img{max-width:100px;height:auto;border-radius:0;}.saboxplugin-wrap .saboxplugin-authorname{font-size:18px;line-height:1;margin:20px 0 0 20px;display:block}.saboxplugin-wrap .saboxplugin-authorname a{text-decoration:none}.saboxplugin-wrap .saboxplugin-authorname a:focus{outline:0}.saboxplugin-wrap .saboxplugin-desc{display:block;margin:5px 20px}.saboxplugin-wrap .saboxplugin-desc a{text-decoration:underline}.saboxplugin-wrap .saboxplugin-desc p{margin:5px 0 12px}.saboxplugin-wrap .saboxplugin-web{margin:0 20px 15px;text-align:left}.saboxplugin-wrap .sab-web-position{text-align:right}.saboxplugin-wrap .saboxplugin-web a{color:#ccc;text-decoration:none}.saboxplugin-wrap .saboxplugin-socials{position:relative;display:block;background:#fcfcfc;padding:5px;border-top:1px solid #eee}.saboxplugin-wrap .saboxplugin-socials a svg{width:20px;height:20px}.saboxplugin-wrap .saboxplugin-socials a svg .st2{fill:#fff}.saboxplugin-wrap .saboxplugin-socials a svg .st1{fill:rgba(0,0,0,.3)}.saboxplugin-wrap .saboxplugin-socials a:hover{opacity:.8;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;box-shadow:none!important;-webkit-box-shadow:none!important}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color{box-shadow:none;padding:0;border:0;-webkit-transition:opacity .4s;-moz-transition:opacity .4s;-o-transition:opacity .4s;transition:opacity .4s;display:inline-block;color:#fff;font-size:0;text-decoration:inherit;margin:5px;-webkit-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;overflow:hidden}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-grey{text-decoration:inherit;box-shadow:none;position:relative;display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom:1;margin:10px 5px;color:#444}.clearfix:after,.clearfix:before{content:' ';display:table;line-height:0;clear:both}.ie7 .clearfix{zoom:1}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitch{border-color:#38245c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-addthis{border-color:#e91c00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-behance{border-color:#003eb0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-delicious{border-color:#06c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-deviantart{border-color:#036824}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-digg{border-color:#00327c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-dribbble{border-color:#ba1655}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-facebook{border-color:#1e2e4f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-flickr{border-color:#003576}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-github{border-color:#264874}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-google{border-color:#0b51c5}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-googleplus{border-color:#96271a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-html5{border-color:#902e13}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-instagram{border-color:#1630aa}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-linkedin{border-color:#00344f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-pinterest{border-color:#5b040e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-reddit{border-color:#992900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-rss{border-color:#a43b0a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-sharethis{border-color:#5d8420}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-skype{border-color:#00658a}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-soundcloud{border-color:#995200}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-spotify{border-color:#0f612c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stackoverflow{border-color:#a95009}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-steam{border-color:#006388}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-user_email{border-color:#b84e05}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-stumbleUpon{border-color:#9b280e}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-tumblr{border-color:#10151b}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-twitter{border-color:#0967a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vimeo{border-color:#0d7091}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-windows{border-color:#003f71}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-wordpress{border-color:#0f3647}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-yahoo{border-color:#14002d}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-youtube{border-color:#900}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-xing{border-color:#000202}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mixcloud{border-color:#2475a0}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-vk{border-color:#243549}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-medium{border-color:#00452c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-quora{border-color:#420e00}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-meetup{border-color:#9b181c}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-goodreads{border-color:#000}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-snapchat{border-color:#999700}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-500px{border-color:#00557f}.saboxplugin-socials.sabox-colored .saboxplugin-icon-color .sab-mastodont{border-color:#185886}.sabox-plus-item{margin-bottom:20px}@media screen and (max-width:480px){.saboxplugin-wrap{text-align:center}.saboxplugin-wrap .saboxplugin-gravatar{float:none;padding:20px 0;text-align:center;margin:0 auto;display:block}.saboxplugin-wrap .saboxplugin-gravatar img{float:none;display:inline-block;display:-moz-inline-stack;vertical-align:middle;zoom:1}.saboxplugin-wrap .saboxplugin-desc{margin:0 10px 20px;text-align:center}.saboxplugin-wrap .saboxplugin-authorname{text-align:center;margin:10px 0 20px}}body .saboxplugin-authorname a,body .saboxplugin-authorname a:hover{box-shadow:none;-webkit-box-shadow:none}a.sab-profile-edit{font-size:16px!important;line-height:1!important}.sab-edit-settings a,a.sab-profile-edit{color:#0073aa!important;box-shadow:none!important;-webkit-box-shadow:none!important}.sab-edit-settings{margin-right:15px;position:absolute;right:0;z-index:2;bottom:10px;line-height:20px}.sab-edit-settings i{margin-left:5px}.saboxplugin-socials{line-height:1!important}.rtl .saboxplugin-wrap .saboxplugin-gravatar{float:right}.rtl .saboxplugin-wrap .saboxplugin-authorname{display:flex;align-items:center}.rtl .saboxplugin-wrap .saboxplugin-authorname .sab-profile-edit{margin-right:10px}.rtl .sab-edit-settings{right:auto;left:0}img.sab-custom-avatar{max-width:75px;}.saboxplugin-wrap .saboxplugin-gravatar img {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color {-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color .st1 {display: none;}.saboxplugin-wrap .saboxplugin-socials .saboxplugin-icon-color svg {border-width: 1px;border-style:solid;border-radius:50%}.saboxplugin-wrap {margin-top:0px; margin-bottom:45px; padding: 0px 0px }.saboxplugin-wrap .saboxplugin-authorname {font-size:20px; line-height:27px;}.saboxplugin-wrap .saboxplugin-desc p, .saboxplugin-wrap .saboxplugin-desc {font-size:14px !important; line-height:21px !important;}.saboxplugin-wrap .saboxplugin-web {font-size:14px;}.saboxplugin-wrap .saboxplugin-socials a svg {width:36px;height:36px;}</style><script type='text/javascript'>
+/* <![CDATA[ */
+var celtispack_options = {"lazyload_embed":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/celtispack/modules/unveil-lazyload/jquery.unveil_custom.js'></script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/stock-ticker/assets/js/jquery.webticker.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var stockTickerJs = {"ajax_url":"https:\/\/ainow.ai\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/stock-ticker/assets/js/jquery.stockticker.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"\u8868\u793a","visibility_hide":"\u975e\u8868\u793a","width":"Auto"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/table-of-contents-plus/front.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var awsmJobsPublic = {"ajaxurl":"https:\/\/ainow.ai\/wp-admin\/admin-ajax.php","is_tax_archive":"","job_id":"0","wp_max_upload_size":"16777216","i18n":{"loading_text":"Loading...","form_error_msg":{"general":"Error in submitting your application. Please try again later!","file_validation":"The file you have selected is too large."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://ainow.ai/wp-content/plugins/wp-job-openings/assets/js/script.min.js'></script>
+<script type='text/javascript' src='https://ainow.ai/wp-includes/js/wp-embed.min.js'></script>
+
+    <!-- BEGIN: wpflow ga events array -->
+    <script>
+
+                jQuery(document).ready(function() {
+                    if(typeof scroll_events == 'undefined') {
+                        return;
+                    }
+                    scroll_events.bind_events( {
+                        universal: 1,
+                        gtm:0,
+                        gst:0,
+
+                        scroll_elements: [],
+                        click_elements: [{'select':'.wpp-post-title','category':'クリック','action':'記事タイトルクリック','label':'','bounce':'true','evalue':''}],
+                    });
+                });
+
+    </script>
+    <!-- END: wpflow ga events array --><!-- Celtispack version 2.0.0 Page generated info 151 queries 0.116 seconds --></html>
+
+<!-- Dynamic page generated in 0.129 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2020-08-31 17:07:17 -->
+
+<!-- super cache -->
